@@ -1,0 +1,166 @@
+.bmz-steps {
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .bmz-steps--horizontal {
+    padding: 0 10px;
+  }
+  .bmz-steps--horizontal .bmz-steps__items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 0 10px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 22px;
+  }
+  .bmz-steps--horizontal .bmz-steps__items.bmz-steps__items--alone {
+    padding-top: 10px;
+  }
+  .bmz-steps--vertical {
+    padding: 0 0 0 35px;
+  }
+  .bmz-steps__icon {
+    float: left;
+    margin-right: 10px;
+  }
+  .bmz-steps .bmz-icon {
+    font-size: 40px;
+  }
+  .bmz-steps__message {
+    height: 40px;
+    margin: 15px 0;
+  }
+  .bmz-steps__title {
+    font-size: 14px;
+    color: #333;
+    padding-top: 4px;
+  }
+  .bmz-steps__desc {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #999;
+  }
+  .bmz-step {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 14px;
+    position: relative;
+    color: #999;
+  }
+  .bmz-step--horizontal {
+    float: left;
+  }
+  .bmz-step--horizontal:first-child .bmz-step__title {
+    -webkit-transform: none;
+    transform: none;
+    margin-left: 0;
+  }
+  .bmz-step--horizontal:last-child {
+    position: absolute;
+    right: 10px;
+    width: auto;
+  }
+  .bmz-step--horizontal:last-child .bmz-step__title {
+    -webkit-transform: none;
+    transform: none;
+    margin-left: 0;
+  }
+  .bmz-step--horizontal:last-child .bmz-step__circle-container {
+    left: auto;
+    right: -9px;
+  }
+  .bmz-step--horizontal:last-child .bmz-step__line {
+    width: 0;
+  }
+  .bmz-step--horizontal .bmz-step__circle-container {
+    position: absolute;
+    top: 28px;
+    left: -8px;
+    padding: 0 8px;
+    background-color: #fff;
+    z-index: 1;
+  }
+  .bmz-step--horizontal .bmz-step__title {
+    font-size: 12px;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    display: inline-block;
+    margin-left: 3px;
+  }
+  .bmz-step--horizontal .bmz-step__line {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+  .bmz-step--horizontal.bmz-step--finish {
+    color: #333;
+  }
+  .bmz-step--horizontal.bmz-step--finish .bmz-step__circle,
+  .bmz-step--horizontal.bmz-step--finish .bmz-step__line {
+    background-color: #06bf04;
+  }
+  .bmz-step--horizontal.bmz-step--process {
+    color: #333;
+  }
+  .bmz-step--horizontal.bmz-step--process .bmz-step__circle-container {
+    top: 20px;
+  }
+  .bmz-step--horizontal.bmz-step--process .bmz-icon {
+    font-size: 12px;
+    color: #06bf04;
+    display: block;
+  }
+  .bmz-step .bmz-step__circle {
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #888;
+    border-radius: 50%;
+  }
+  .bmz-step--vertical {
+    float: none;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 10px 10px 0;
+  }
+  .bmz-step--vertical:not(:last-child)::after {
+    border-bottom-width: 1px;
+  }
+  .bmz-step--vertical:first-child::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+    top: 0;
+    left: -15px;
+    z-index: 1;
+  }
+  .bmz-step--vertical .bmz-step__circle-container > i {
+    position: absolute;
+    z-index: 2;
+  }
+  .bmz-step--vertical .bmz-icon-checked {
+    top: 12px;
+    left: -20px;
+    line-height: 1;
+    font-size: 12px;
+  }
+  .bmz-step--vertical .bmz-step__circle {
+    top: 16px;
+    left: -17px;
+  }
+  .bmz-step--vertical .bmz-step__line {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 1px;
+    height: 100%;
+    background-color: #e5e5e5;
+  }

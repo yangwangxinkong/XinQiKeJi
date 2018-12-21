@@ -1,0 +1,75 @@
+.active {
+  color: #f52525;
+}
+.color_base {
+  color: #E60014;
+}
+.color_title {
+  color: #333;
+}
+.color_content {
+  color: #666;
+}
+.color_content1 {
+  color: #999;
+}
+.color_border {
+  color: #e9e9e9;
+}
+.color_white {
+  color: #ffffff;
+}
+.color_red {
+  color: #f52525;
+}
+.color_green {
+  color: #2ba35c;
+}
+.color_orange {
+  color: #f88701;
+}
+.color_yellow {
+  color: #f5c24e;
+}
+.color_63 {
+  color: #3f3f3f;
+}
+.white {
+  color: #fff;
+}
+.grey_0 {
+  color: #000 !important;
+}
+.grey_1 {
+  color: #111 !important;
+}
+.grey_2 {
+  color: #222 !important;
+}
+.grey_3 {
+  color: #333 !important;
+}
+.grey_4 {
+  color: #444 !important;
+}
+.grey_5 {
+  color: #555 !important;
+}
+.grey_6 {
+  color: #666 !important;
+}
+.grey_7 {
+  color: #777 !important;
+}
+.grey_9 {
+  color: #999 !important;
+}
+.grey_7c {
+  color: #7c7c7c !important;
+}
+.grey_ce {
+  color: #cecece !important;
+}
+.grey_be {
+  color: #bebebe;
+}

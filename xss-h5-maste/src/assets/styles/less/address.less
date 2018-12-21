@@ -1,0 +1,88 @@
+// 地址选择
+.address_defalut {
+  margin-top: 10px;
+    .show-address {
+      padding: 15px;
+      position: relative;
+      &:before {
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 4px;
+        position: absolute;
+        background: -webkit-repeating-linear-gradient(
+          135deg,
+          #FF841A 0,
+          #FF841A 20%,
+          transparent 0,
+          transparent 25%,
+          #5F9CE7 0,
+          #5F9CE7 45%,
+          transparent 0,
+          transparent 50%
+        );
+        background: repeating-linear-gradient(
+          -45deg,
+          #FF841A 0,
+          #FF841A 20%,
+          transparent 0,
+          transparent 25%,
+          #5F9CE7 0,
+          #5F9CE7 45%,
+          transparent 0,
+          transparent 50%
+        );
+        background-size: 80px;
+      }
+      .show-address-info{
+        .default-tag {
+          line-height: 0;
+          span {
+            background: url(../../../assets/default-tag.png) no-repeat;
+            background-size: 100% 100%;
+            font-size: 0;
+            width: .933rem;
+            height: .48rem;
+            display: inline-block;
+          }
+        }
+          div.addr-base-info{
+              padding-left: 15px;
+              .addr-text{
+                font-size: .453rem;
+                font-weight: 500;
+                line-height: 20px;
+              }
+              .name-address{
+                font-size: .4rem;
+               color:  rgba(45,46,70,0.60);
+              }
+              
+          }
+          .addr-text+.name-address{
+            font-size: 12px;
+          }
+      }
+    }
+    .add-address {
+      padding: .8rem 0;
+      position: relative;
+      &:before{
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        height:4px;
+        position: absolute;
+        background: -webkit-repeating-linear-gradient(135deg, #FF841A  0,  #FF841A 20%, transparent 0, transparent 25%, #5F9CE7 0, #5F9CE7 45%, transparent 0, transparent 50%);
+        background: repeating-linear-gradient(-45deg,  #FF841A 0,  #FF841A  20%, transparent 0, transparent 25%, #5F9CE7 0, #5F9CE7 45%, transparent 0, transparent 50%);
+        background-size: 80px;
+      }
+      span{
+        background: url(../../../assets/icon-add.png)left center no-repeat;
+        background-size:.32rem .347rem; 
+        padding-left:.533rem;
+      }
+    }
+  }

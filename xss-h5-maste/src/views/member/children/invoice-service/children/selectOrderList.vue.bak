@@ -1,0 +1,242 @@
+<template>
+  <div class='page'>
+    <div class="container select-buyer">
+
+    <div class="weui-cells weui-cells_checkbox">
+      <label v-for='(item, index) in checkboxData' :key="item.id" class="weui-cell weui-check_label">
+        <div class="weui-cell__hd">
+          <input :value="item.id" v-model="checkBox.items[index]" @click="handleInputChange" type="checkbox" name="vux-checkbox" class="weui-check">
+          <i class="weui-icon-checked vux-checklist-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd"><p>{{item.value}}价格：{{item.price}}</p></div>
+      </label>
+    </div>
+      <checklist :options="fullValues"></checklist>
+      <span>id: {{selectedData}}</span>
+
+      <!-- footer -->
+      <section class="footer-actionBar">
+        <section class="footer-actionBar-container">
+          <div class="weui-cells weui-cells_checkbox">
+            <label class="weui-cell " style="padding:0px;">
+              <div class="weui-cell__hd">
+                <input value="1" @click="checkedAll" type="checkbox" name="vux-checkbox" class="weui-check">
+                <i class="weui-icon-checked vux-checklist-icon-checked"></i>
+              </div>
+              <div class="weui-cell__bd">
+                <span class="f14">全选<span>代开票金额<em class="color-base">￥40.00</em></span></span>
+              </div>
+            </label>
+          </div>
+          <div class="flx-ui" style="height:44px;line-height: 44px; ">
+            <div class="flex1 tc  white" ><span class="f16 pl0">保存</span></div>
+          </div>
+        </section>
+      </section>
+  </div>
+  </div>
+
+
+</template>
+<script>import {Checklist} from "vux";
+export default {
+  name: "selectBuyer",
+  components: {Checklist},
+  data() {
+    return {
+      fullValues: [],
+      checkboxData: [{id: "1", value: "苹果4S", price: 110}, {id: "2", value: "苹果5C", price: 250}, {
+        id: "3",
+        value: "苹果6P",
+        price: 340
+      }],
+      selectedData: [],
+      totalPrice: 0.00,
+      isAllChecked: true,
+      checkBox: {checked: false, items: {}}
+    };
+  },
+  mounted() {
+    this.checkboxData.forEach((item, index) => {
+      this.selectedData.push(item.id);
+      this.$set(this.checkBox.items, index, !this.checkBox.checked);
+    });
+  },
+  computed: {
+    totalPurchasers() {
+      return this.selectedData.length;
+    }, calculatedTotal() {
+      this.totalPrice = 0.00;
+      this.selectedData.map((item1, index) => {
+        let curItem1 = item1;
+        this.checkboxData.map((item2, index) => {
+          if (this.checkboxData[index].id == curItem1) {
+            this.totalPrice += this.checkboxData[index].price;
+          }
+        });
+      });
+      return this.totalPrice;
+    }
+  },
+  methods: {
+
+    //全选点击事件
+    checkedAll() {
+      let trueNum = 0;
+      let checkBoxNum = 0;
+      Object.keys(this.checkBox.items).forEach(key => {
+        checkBoxNum++;
+        if (this.checkBox.items[key] === true) {
+          trueNum++;
+        }
+      });
+      if (trueNum != 0) {
+        if (trueNum != this.checkboxData.length || checkBoxNum < this.checkboxData.length) {
+          this.checkboxDataMap(!this.checkBox.checked);
+        } else {
+          this.checkboxDataMap(this.checkBox.checked);
+        }
+      } else {
+        this.checkboxDataMap(!this.checkBox.checked);
+      }
+    },
+    //遍历改变checkbox状态
+    checkboxDataMap(checked) {
+      let checkboxDataId = [];
+      this.checkboxData.forEach((item, index) => {
+        this.checkBox.items[index] = checked;
+        checkboxDataId.push(item.id);
+      });
+      if (checked == true) {
+        this.selectedData = this.arrayMerging(this.selectedData, checkboxDataId);
+      } else {
+        this.selectedData.splice(0, this.selectedData.length);
+      }
+    },
+    //input输入框change事件
+    handleInputChange(e) {
+      setTimeout(() => {
+        if (this.selectedData.indexOf(e.target.value) > -1) {
+          this.remove(this.selectedData, e.target.value);
+        } else {
+          this.selectedData.push(e.target.value);
+        }
+        if (this.selectedData.length < this.checkboxData.length) {
+          this.isAllChecked = false;
+        } else {
+          this.isAllChecked = true;
+        }
+      }, 0);
+    },
+    //数组删除
+    remove(arr, val) {
+      var index = arr.indexOf(val);
+      if (index > -1) {
+        arr.splice(index, 1);
+      }
+    },
+    //数组合并去重
+    arrayMerging(arr1, arr2) {
+      var arr = arr1.concat();
+      for (var i = 0; i < arr2.length; i++) {
+        if (arr.indexOf(arr2[i]) === -1) {
+          arr.push(arr2[i]);
+        }
+      }
+      return arr;
+    }
+  },
+
+  metaInfo() {
+    return {title: "选择购卡学生"};
+  }
+};</script>
+<style lang="less" scoped>
+  .footer-actionBar-container{
+    height: auto !important;
+
+  }
+  .select-buyer {
+
+  .weui-cells_checkbox {
+    margin-top: -25px !important;
+    font-size: 28px;
+
+  .weui-cell {
+
+  .vux-label-desc {
+    font-size: inherit;
+  }
+
+  }
+  & .weui-icon-checked:before {
+    font-size: 25px;
+  }
+
+  &
+  .weui-check:checked + .vux-checklist-icon-checked:before {
+    color: @color_orange;
+  }
+
+  }
+  .footer .weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {
+    content: '\EA01';
+  }
+
+  .footer .weui-cells_checkbox .weui-check:checked + .vux-checklist-icon-checked:before {
+    color: #C9C9C9;
+  }
+
+  }
+  .pay-area {
+    position: fixed;
+    height: 94px;
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+  .pay-btn {
+    width: 220px;
+    text-align: center;
+    font-size: 36px; /* px */
+    line-height: 94px;
+    color: #ffffff;
+    background-color: @color_orange;
+
+  .loading-img {
+    width: 40px;
+    vertical-align: -3px;
+    margin: 0 3px;
+  }
+
+  }
+  .pay-text {
+    font-size: 28px;
+    color: @grey_be;
+    line-height: 54px; /* px */
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+  }
+
+  .pay-money {
+    font-size: 48px; /* px */
+    line-height: 54px; /* px */
+    color: @color_red;
+  }
+
+  .price-area {
+    flex: 1;
+    padding: 20px 30px;
+  }
+
+  }
+  .error {
+    padding-left: 15px;
+    line-height: 28px;
+    color: #888;
+    font-size: 12px;
+  }
+</style>

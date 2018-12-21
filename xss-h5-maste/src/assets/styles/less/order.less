@@ -1,0 +1,78 @@
+@import 'mixin.less';
+@import 'color.less';
+@import 'class.less';
+// 订单信息
+.order-info {
+    .order_good_hd {
+      padding: 10px 0;
+      .custom-store-img {
+        width: 0.533333rem;
+        height: 0.533333rem;
+      }
+    }
+    .order_good_bd {
+        padding: 10px 0;
+        .block-item:not(:last-child){
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            .border_b;
+        }
+      .good_cover {
+        width: 2.666667rem;
+        height: 2.666667rem;
+        border-radius: 3px;
+        border: 1px solid @grey_be;
+      }
+    }
+  }
+  // 订单统计信息
+  .order_total {
+    padding: 15px;
+    .buy_chart_item {
+      .flex-ui;
+       height: 25px;
+    }
+    .buy_chart_item_text {
+      .flex1;
+      .grey_3
+    }
+    .buy_chart_item_price {
+      .color_red;
+    }
+  }
+// inner
+.inner{
+    padding: 10px 15px;
+    .inner_line{
+        line-height: 25px;
+        .f14;
+        .flex-ui;
+        .space-between;
+        .align-items-center
+       
+    }
+    .content{
+        .flex1;
+    }
+}  
+.detailcard-delivery {
+    .wuliu-box{
+        .f14;
+        .flex-ui;
+        .space-between;
+        .align-items-center
+        
+    }
+    .right-text{
+        .flex1;
+        .pt10;
+        .pb10;
+        padding-left: 10px;
+    }
+    .icon-box{
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
