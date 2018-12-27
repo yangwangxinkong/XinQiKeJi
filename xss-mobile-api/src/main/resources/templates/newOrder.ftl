@@ -1,0 +1,26 @@
+{
+"touser":"${openid}",
+"template_id":"ziu0V3gB6UsjU381YiOjeYL3iUIgKrDzVK85i-CbxZI",
+"topcolor":"#FF0000",
+"data":{
+"first": {
+"value":"您有新的${type}(${sn}),请及时处理",
+"color":"#173177"
+},
+"keyword1":{
+"value":"${price}",
+"color":"#F05423"
+},
+"keyword2":{
+"value":"${phone}",
+"color":"#F05423"
+},
+"keyword3":{
+"value":"${address}",
+"color":"#F05423"
+},
+"remark":{
+"value":"请及时登录平台处理"
+}
+}
+}
