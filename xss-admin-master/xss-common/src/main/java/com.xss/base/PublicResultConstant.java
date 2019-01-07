@@ -36,7 +36,6 @@ public enum PublicResultConstant {
      */
     INVALID_RE_PASSWORD("10000010", "两次输入密码不一致"),
     /**
-    /**
      * 用户名或密码错误
      */
     INVALID_PASSWORD("10000009", "旧密码错误"),
@@ -44,11 +43,6 @@ public enum PublicResultConstant {
      * 用户名重复
      */
     USERNAME_ALREADY_IN("10000002", "用户已存在"),
-
-    /**
-     * 密码长度为8至20位
-     */
-    INVALID_BU_PASSWORD("10086","密码长度为8至20位"),
     /**
      * 用户不存在
      */

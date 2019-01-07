@@ -6,16 +6,20 @@ import com.xss.domain.enums.FeeCategory;
 import com.xss.domain.enums.PayCategory;
 import com.xss.util.CurrencyMethod;
 import com.xss.util.JsonUtil;
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.NotEmpty;
+import springfox.documentation.spring.web.json.Json;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Entity - 报价单基本表
@@ -126,7 +130,7 @@ public class Quotation extends BaseEntity {
     private BigDecimal amount;
 
     /**
-     * 获取 会员
+     * 获取
      * @return
      */
     @ManyToOne(fetch = FetchType.LAZY)

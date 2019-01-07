@@ -58,9 +58,7 @@ public class LoginController {
         }
         Member member = (Member) result.getData();
         JSONObject memberJo = JsonUtil.toJSONObject(member, new String[]{"id","username","name", "mobile","headImage", "gender", "idFace", "idBackFace", "hukouIndex", "hukouPerson", "onePhone"});
-        memberJo.put("nickName",
-                new String(Base64.decodeBase64(
-                        member.getNickName()), "utf-8"));
+        memberJo.put("nickName", new String(Base64.decodeBase64(member.getNickName()), "utf-8"));
         String token = JWTUtil.sign(member.getUsername(), member.getPassword());
         memberJo.put("token", token);
 

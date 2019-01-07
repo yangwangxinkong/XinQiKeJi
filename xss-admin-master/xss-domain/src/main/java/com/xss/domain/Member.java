@@ -9,6 +9,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.xss.domain.enums.Gender;
 import com.xss.util.CurrencyMethod;
 import com.xss.util.DateUtil;
+import com.xss.util.JsonUtil;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -21,9 +22,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import java.math.BigDecimal;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Entity - 会员
@@ -41,7 +40,7 @@ public class Member extends BaseEntity {
 
 	public static final String[] DEFAULT_JSON_PARAMS = new String[]{"id", "openId", "username", "name", "mobile", "point"
 			, "balance", "isEnabled", "isLocked", "registerIp", "identification", "gender", "headImage", "isVip"
-			, "isNew", "idFace", "idBackFace", "hukouIndex", "hukouPerson", "onePhone", "cityName"};
+			, "isNew", "idFace", "idBackFace", "hukouIndex", "hukouPerson", "onePhone", "cityName", "shareBalance", "hasShareOrder"};
 
 	/**
 	 * 用户性质
@@ -238,6 +237,9 @@ public class Member extends BaseEntity {
 	/** 余额 */
 	private BigDecimal balance;
 
+	/** 分享收益余额 */
+	private BigDecimal shareBalance;
+
 	/** 是否启用 */
 	private Boolean isEnabled;
 
@@ -316,11 +318,23 @@ public class Member extends BaseEntity {
 	/** 城市名称 */
 	private String cityName;
 
+	/** 分享是否已下单 */
+	private Boolean hasShareOrder;
+
+	/** 分享二维码图片地址 */
+	private String qrcodeUrl;
+
 	/** 会员类型 */
 	private Type type;
 
 	/** 购物车 */
 	private Cart cart;
+
+	/** 分享人 */
+	private Member shareMember;
+
+	/** 分享对象 */
+	private Set<Member> sharedMembers = new HashSet<Member>();
 
 	/** 收货地址 */
 	private Set<Receiver> receivers = new HashSet<Receiver>();
@@ -340,6 +354,9 @@ public class Member extends BaseEntity {
 
 	/** 收藏商品 */
 	private Set<Product> favoriteProducts = new HashSet<Product>();
+
+	/** 反馈信息 */
+	private Set<Feedback> feedbacks = new HashSet<Feedback>();
 
 	/**
 	 * 获取用户名
@@ -888,6 +905,24 @@ public class Member extends BaseEntity {
 		this.cart = cart;
 	}
 
+	@ManyToOne(fetch = FetchType.LAZY)
+	public Member getShareMember() {
+		return shareMember;
+	}
+
+	public void setShareMember(Member shareMember) {
+		this.shareMember = shareMember;
+	}
+
+	@OneToMany(mappedBy = "shareMember", fetch = FetchType.LAZY)
+	public Set<Member> getSharedMembers() {
+		return sharedMembers;
+	}
+
+	public void setSharedMembers(Set<Member> sharedMembers) {
+		this.sharedMembers = sharedMembers;
+	}
+
 	/**
 	 * 获取订单
 	 * 
@@ -969,6 +1004,14 @@ public class Member extends BaseEntity {
 		this.favoriteProducts = favoriteProducts;
 	}
 
+	@OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
+	public Set<Feedback> getFeedbacks() {
+		return feedbacks;
+	}
+
+	public void setFeedbacks(Set<Feedback> feedbacks) {
+		this.feedbacks = feedbacks;
+	}
 
 	/**
 	 * 设置报价单基本表
@@ -993,6 +1036,30 @@ public class Member extends BaseEntity {
 
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
+	}
+
+	public BigDecimal getShareBalance() {
+		return shareBalance;
+	}
+
+	public void setShareBalance(BigDecimal shareBalance) {
+		this.shareBalance = shareBalance;
+	}
+
+	public Boolean getHasShareOrder() {
+		return hasShareOrder;
+	}
+
+	public void setHasShareOrder(Boolean hasShareOrder) {
+		this.hasShareOrder = hasShareOrder;
+	}
+
+	public String getQrcodeUrl() {
+		return qrcodeUrl;
+	}
+
+	public void setQrcodeUrl(String qrcodeUrl) {
+		this.qrcodeUrl = qrcodeUrl;
 	}
 
 	public Type getType() {
@@ -1056,7 +1123,20 @@ public class Member extends BaseEntity {
 		if (ArrayUtils.contains(params,"lastLoginDate")){
 			jo.put("lastLoginDate", DateUtil.format(member.getLastLoginDate(),"yyyy-MM-dd HH:mm:ss"));
 		}
-
+		//分享者信息
+		if (ArrayUtils.contains(params,"shareMember")){
+			Member shareMember = member.getShareMember();
+			if (null != shareMember) {
+				jo.put("shareMember", JsonUtil.toJSONObject(shareMember, new String[]{"id", "userName", "nickName", "name", "mobile"}));
+			}
+		}
+		//分享对象信息
+		if (ArrayUtils.contains(params,"shared")){
+			List<Member> shares = new ArrayList<>(member.getSharedMembers());
+			if (null != shares && !shares.isEmpty()) {
+				jo.put("sharedMembers", convertList(shares, null));
+			}
+		}
 		return jo;
 	}
 	public static void main(String[] args) {

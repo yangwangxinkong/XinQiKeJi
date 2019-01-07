@@ -32,8 +32,7 @@ public class ArticleService extends BaseService<Article,Long> {
     @Resource
     private ArticleDao articleDao;
     @Resource
-    public void setBaseDao(ArticleDao articleDao) {
-        super.setBaseDao(articleDao);
+    public void setBaseDao(ArticleDao articleDao) {super.setBaseDao(articleDao);
     }
 
     public ArticleDao getArticleDao() {

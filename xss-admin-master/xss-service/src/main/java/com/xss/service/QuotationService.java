@@ -46,6 +46,8 @@ public class QuotationService extends BaseService<Quotation,Long> {
     private QuotationItemService quotationItemService;
     @Autowired
     private ConfigsService configsService;
+    @Autowired
+    private MemberService memberService;
     @Resource
     public void setBaseDao(QuotationDao quotationDao) {
         super.setBaseDao(quotationDao);
@@ -60,19 +62,17 @@ public class QuotationService extends BaseService<Quotation,Long> {
     public void setSocialPayAmount (Quotation quotation, PayBase payBase) {
 
         //BigDecimal res = new BigDecimal(0);
-        //根据城市信息和户口性质（类型），查询出该城市内该户口下所有的社保类型ID
+
         List<SocialSecurityRatioSetting> socialSecurityRatioSettingList = socialSecurityRatioSettingService.getSocialSecurityRatioSetting(quotation.getCity(), quotation.getResidenceType());
 
         Configs configs = configsService.getConfigsByCode(quotation.getCity().getParent().getCode() + "_" + Configs.MEDICALCARE_CODE);
 
         if(socialSecurityRatioSettingList != null && socialSecurityRatioSettingList.size() != 0) {
-            //个人缴费比例
+
             BigDecimal personal = BigDecimal.ZERO;
-            //公司缴费比例
             BigDecimal company = BigDecimal.ZERO;
-            //社保缴费基数
             BigDecimal payBaseTemp;
-            //遍历获得的社保类型ID
+
             for(SocialSecurityRatioSetting socialSecurityRatioSetting : socialSecurityRatioSettingList) {
 
                 payBaseTemp = quotation.getSocialBase();
@@ -110,26 +110,19 @@ public class QuotationService extends BaseService<Quotation,Long> {
                         } else if(payBaseTemp.compareTo(payBase.getSsc5BaseMin()) < 0) {
                             payBaseTemp = payBase.getSsc5BaseMin();
                         }
-                    }else if (socialSecurityRatioSetting.getSocialSecurityCategory().equals(SocialSecurityCategory.ssc6)){
-                        // 社保缴费基数 < 社保分类明细基数 取 分类明细基数 >> 大病
-                        if(payBaseTemp.compareTo(payBase.getSsc6BaseMin()) < 0) {
-                            payBaseTemp = payBase.getSsc6BaseMin();
-                        }
                     }
                 }
 
-                // 个人 缴费（缴费对象）
+                // 个人 缴费
                 if(socialSecurityRatioSetting.getPayFrom() == PayFrom.pf0) {
 
-                    // 20181129 固定值是否，分开计算（残保金是否固定值，将用户输入的值保留两位小数）
+                    // 20181129 固定值是否，分开计算
                     if(socialSecurityRatioSetting.getFixed() != null && socialSecurityRatioSetting.getFixed()) {
                         personal = personal.add(BigDecimalUtils.setScale(socialSecurityRatioSetting.getFixedValue(), 2, BigDecimal.ROUND_HALF_UP));
                     } else {
-                        //getRatio()获取缴费比例，之后进行计算
                         personal = personal.add(BigDecimalUtils.setScale(payBaseTemp.multiply(socialSecurityRatioSetting.getRatio()), 2, BigDecimal.ROUND_HALF_UP));
                     }
 
-                    //如果社保类型是医疗，就使用指定编码值
                     if(socialSecurityRatioSetting.getSocialSecurityCategory().equals(SocialSecurityCategory.ssc3)) {
                         if(configs != null && StringUtils.hasText(configs.getCodeValue())) {
                             personal = personal.add(new BigDecimal(configs.getCodeValue()));
@@ -145,14 +138,11 @@ public class QuotationService extends BaseService<Quotation,Long> {
                     }
                 }
             }
-            //获取缴费月数并和个人缴费比例进行计算，最后获得总共需要缴纳的费用---------个人
+
             personal = personal.multiply(BigDecimal.valueOf(quotation.getMonthCount()));
-            //获取缴费月数并和公司缴费比例进行计算，最后获得总共需要缴纳的费用---------公司
             company = company.multiply(BigDecimal.valueOf(quotation.getMonthCount()));
 
-            //设置个人缴费金额（所有社保类别的总额）
             quotation.setPersonSocialAmount(personal);
-            //设置公司缴费金额（所有社保类别的总额）
             quotation.setCompanySocialAmount(company);
         }
     }
@@ -233,8 +223,8 @@ public class QuotationService extends BaseService<Quotation,Long> {
         if (null != member){
             //1.获取会员套餐折扣
             if (null != member.getIsVip() && member.getIsVip()){
-                Configs config = configsService.getConfigsByCode(Configs.DEFAULT_VIP_DISCOUNT_CODE);
-                if (null != config){
+//                Configs config = configsService.getConfigsByCode(Configs.DEFAULT_VIP_DISCOUNT_CODE);
+//                if (null != config){
 //                    BigDecimal discount = BigDecimal.ONE;
 //                    try {
 //                        discount = new BigDecimal(config.getCodeValue()).setScale(2);
@@ -242,11 +232,14 @@ public class QuotationService extends BaseService<Quotation,Long> {
 //
 //                    }
 //                    BigDecimal discountFee = quotation.getFee().multiply(discount).setScale(2, BigDecimal.ROUND_HALF_DOWN);
-                    BigDecimal discountFee = quotation.getFee().multiply(member.getVipDiscount()).setScale(2, BigDecimal.ROUND_HALF_DOWN);
-                    quotation.setVipDiscountFee(quotation.getFee().subtract(discountFee));
-                    quotation.setFirstOrderDiscountFee(BigDecimal.ZERO);
-                    quotation.setFee(discountFee);
-                }
+//                    BigDecimal discountFee = quotation.getFee().multiply(member.getVipDiscount()).setScale(2, BigDecimal.ROUND_HALF_DOWN);
+//                    quotation.setVipDiscountFee(quotation.getFee().subtract(discountFee));
+//                    quotation.setFirstOrderDiscountFee(BigDecimal.ZERO);
+//                    quotation.setFee(discountFee);
+//                }
+                quotation.setVipDiscountFee(member.getVipDiscount());
+                quotation.setFirstOrderDiscountFee(BigDecimal.ZERO);
+                quotation.setFee(member.getVipDiscount());
             }else if(null != member.getIsNew() && member.getIsNew()){
                 //2.获取新手套餐折扣
                 Configs config = configsService.getConfigsByCode(Configs.DEFAULT_FIRST_ORDER_DISCOUNT_CODE);
@@ -275,31 +268,24 @@ public class QuotationService extends BaseService<Quotation,Long> {
 
     /**
      * 计算报价单
-     * @param quotation  新的报价单信息（要保存的报价单）
+     * @param quotation
      * @param calculatorCategory 是计算方式
      */
     @Transactional(rollbackFor = Exception.class)
     public Quotation setCalculateQuotation (Quotation quotation, CalculatorCategory calculatorCategory) {
 
-        /*根据城市ID查询出城市信息其中包括（
-            社保比例配置集合，公积金比例配置集合，服务费集合，
-            报价单集合，订单集合，户口类型集合，缴费基数集合
-         */
         City city = cityDao.findOne(quotation.getCity().getId());
         quotation.setCity(city);
-        System.out.println("city:" + city.getFullName());  //获取城市的全称
-        //根据城市ID查询社保公积金基数（包括：社保缴费基数 大病 最小值等）
+        System.out.println("city:" + city.getFullName());
         PayBase payBase = payBaseService.getPayBaseByCityId(quotation.getCity().getId());
 
         // 缴费类别 fc0(0, "社保"),fc1(1, "公积金"),fc2(2, "社保+公积金");
         // 20181127 城市重新选择后，社保，公积金基数会发生变化
         //if(quotation.getSocialBase() == null) {
-            //社保缴费基数
             quotation.setSocialBase(payBase.getSocialBaseMin());
         //}
         // 20181127 城市重新选择后，社保，公积金基数会发生变化
         //if(quotation.getProvidentBase() == null) {
-            //公积金缴费基数
             quotation.setProvidentBase(payBase.getProvidentBaseMin());
         //}
 
@@ -328,17 +314,17 @@ public class QuotationService extends BaseService<Quotation,Long> {
         // 计算器的话，不需要计算服务费
         if(calculatorCategory.equals(CalculatorCategory.cc0)) {
             // 设置服务费 只是计算的话，不需要计算服务费
-            quotation.setMonthFee(BigDecimal.ZERO); //月服务费
-            quotation.setFee(BigDecimal.ZERO);      //服务费
+            quotation.setMonthFee(BigDecimal.ZERO);
+            quotation.setFee(BigDecimal.ZERO);
         } else {
             // 设置服务费
             setFeeAmount(quotation);
         }
 
-        // 设置总费用（公司+个人+服务费）
+        // 设置总费用
         quotation.setAmount(quotation.getAllAmount().add(quotation.getFee()));
 
-        // 社保信息输入更新页面  或者 计算社保页面  要计算明细cc0(0, "计算器"),cc1(1, "计算报价单"),cc2(2, "计算报价单+明细")
+        // 社保信息输入更新页面  或者 计算社保页面  要计算明细
         if(calculatorCategory.equals(CalculatorCategory.cc2) || calculatorCategory.equals(CalculatorCategory.cc0)) {
 
             List<QuotationItem> quotationItemList = quotation.getQuotationItems();
@@ -362,7 +348,7 @@ public class QuotationService extends BaseService<Quotation,Long> {
 
     /**
      * 保存报价单
-     * @param quotation 新的报价单信息
+     * @param quotation
      */
     @Transactional(rollbackFor = Exception.class)
     public void saveQuotaion (Quotation quotation) {
@@ -370,12 +356,29 @@ public class QuotationService extends BaseService<Quotation,Long> {
         // 正常的计算 保存
         setCalculateQuotation(quotation, CalculatorCategory.cc2);
         System.out.println("userName4:" + quotation.getUsername());
-        // 更新报价单数据库
+        // 更新报价单
         if(quotation.getId() != null) {
             update(quotation);
         } else {
             save(quotation);
         }
+        //更新用户真实姓名和身份证号码
+        Member member = quotation.getMember();
+        member.setName(quotation.getUsername());
+        member.setIdentification(quotation.getIdentification());
+        memberService.update(member);
+//        boolean flag = false;
+//        if (StringUtils.isEmpty(member.getName())){
+//            member.setName(quotation.getUsername());
+//            flag = true;
+//        }
+//        if (StringUtils.isEmpty(member.getIdentification())) {
+//            member.setIdentification(quotation.getIdentification());
+//            flag = true;
+//        }
+//        if(flag) {
+//            memberService.update(member);
+//        }
     }
 
     @Transactional(readOnly = true)
@@ -406,76 +409,83 @@ public class QuotationService extends BaseService<Quotation,Long> {
         // 缴费方式
         JSONArray ja = new JSONArray();
 
-        JSONObject jo = new JSONObject();
-        jo.put("label", "参保人姓名");
-        try {
+        if(quotation != null && quotation.getId() != null) {
+            JSONObject jo = new JSONObject();
+            jo.put("label", "参保人姓名");
+            try {
 //            String nickName = new String(org.apache.commons.codec.binary.Base64.decodeBase64(quotation.getUsername()), "utf-8");
-            jo.put("value", quotation.getUsername());
-        }catch (Exception e){
-            jo.put("value", "");
-        }
+                jo.put("value", quotation.getUsername());
+            }catch (Exception e){
+                jo.put("value", "");
+            }
 
-        ja.add(jo);
-
-        jo = new JSONObject();
-        jo.put("label", "身份证号");
-        jo.put("value", quotation.getIdentification());
-        ja.add(jo);
-
-        jo = new JSONObject();
-        jo.put("label", "参保城市");
-        jo.put("value", quotation.getCity().getFullName());
-        ja.add(jo);
-
-        jo = new JSONObject();
-        jo.put("label", "参保项目");
-        jo.put("value", quotation.getFeeCategory().getDesc() + " " + quotation.getPayCategory().getDesc());
-        ja.add(jo);
-
-        if(quotation.getFeeCategory().equals(FeeCategory.fc0) || quotation.getFeeCategory().equals(FeeCategory.fc2)) {
-            jo = new JSONObject();
-            jo.put("label", "社保参保基数");
-            jo.put("value", quotation.getSocialBase());
             ja.add(jo);
-        }
 
-        if(quotation.getFeeCategory().equals(FeeCategory.fc1) || quotation.getFeeCategory().equals(FeeCategory.fc2)) {
             jo = new JSONObject();
-            jo.put("label", "公积金参保基数");
-            jo.put("value", quotation.getProvidentBase());
+            jo.put("label", "身份证号");
+            jo.put("value", quotation.getIdentification());
             ja.add(jo);
-        }
 
-        jo = new JSONObject();
-        jo.put("label", "缴纳月份");
-        jo.put("value", quotation.getStartDate() + "至" + quotation.getEndDate());
-        ja.add(jo);
-
-        result.put("infoList", ja);
-
-        ja = new JSONArray();
-        jo = new JSONObject();
-        jo.put("label", "缴纳费用");
-        jo.put("value", quotation.getAllAmount() + "元");
-        ja.add(jo);
-
-        jo = new JSONObject();
-        jo.put("label", "服务费");
-        jo.put("value", quotation.getMonthFee() + "元*" + quotation.getMonthCount() + "月");
-        ja.add(jo);
-
-        if (null != quotation.getVipDiscountFee() && quotation.getVipDiscountFee().compareTo(BigDecimal.ZERO) > 0) {
             jo = new JSONObject();
-            jo.put("label", "会员优惠");
-            jo.put("value", quotation.getVipDiscountFee() + "元");
+            jo.put("label", "参保城市");
+            jo.put("value", quotation.getCity().getFullName());
             ja.add(jo);
-        }
 
-        if (null != quotation.getFirstOrderDiscountFee() && quotation.getFirstOrderDiscountFee().compareTo(BigDecimal.ZERO) > 0) {
             jo = new JSONObject();
-            jo.put("label", "首单优惠");
-            jo.put("value", quotation.getFirstOrderDiscountFee() + "元");
+            jo.put("label", "参保项目");
+            jo.put("value", quotation.getFeeCategory().getDesc() + " " + quotation.getPayCategory().getDesc());
             ja.add(jo);
+
+            if(quotation.getFeeCategory().equals(FeeCategory.fc0) || quotation.getFeeCategory().equals(FeeCategory.fc2)) {
+                jo = new JSONObject();
+                jo.put("label", "社保参保基数");
+                jo.put("value", quotation.getSocialBase());
+                ja.add(jo);
+            }
+
+            if(quotation.getFeeCategory().equals(FeeCategory.fc1) || quotation.getFeeCategory().equals(FeeCategory.fc2)) {
+                jo = new JSONObject();
+                jo.put("label", "公积金参保基数");
+                jo.put("value", quotation.getProvidentBase());
+                ja.add(jo);
+            }
+
+            jo = new JSONObject();
+            jo.put("label", "缴纳月份");
+            jo.put("value", quotation.getStartDate() + "至" + quotation.getEndDate());
+            ja.add(jo);
+
+            result.put("infoList", ja);
+
+            ja = new JSONArray();
+            jo = new JSONObject();
+            jo.put("label", "缴纳费用");
+            jo.put("value", quotation.getAllAmount() + "元");
+            ja.add(jo);
+
+            jo = new JSONObject();
+            jo.put("label", "服务费");
+            if(quotation.getMonthCount() != null && quotation.getMonthCount() > 1) {
+                jo.put("value", quotation.getMonthFee() + "元*" + quotation.getMonthCount() + "月");
+            } else {
+                jo.put("value", quotation.getMonthFee() + "元");
+            }
+
+            ja.add(jo);
+
+            if (null != quotation.getVipDiscountFee() && quotation.getVipDiscountFee().compareTo(BigDecimal.ZERO) > 0) {
+                jo = new JSONObject();
+                jo.put("label", "会员优惠");
+                jo.put("value", quotation.getVipDiscountFee() + "元");
+                ja.add(jo);
+            }
+
+            if (null != quotation.getFirstOrderDiscountFee() && quotation.getFirstOrderDiscountFee().compareTo(BigDecimal.ZERO) > 0) {
+                jo = new JSONObject();
+                jo.put("label", "首单优惠");
+                jo.put("value", quotation.getFirstOrderDiscountFee() + "元");
+                ja.add(jo);
+            }
         }
 
         result.put("payList", ja);

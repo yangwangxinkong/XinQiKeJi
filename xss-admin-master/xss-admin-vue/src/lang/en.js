@@ -51,6 +51,8 @@ export default {
     createArticle: 'Create Article',
     editArticle: 'Edit Article',
     articleList: 'Article List',
+    /*customerEvaluationList: 'CustomerEvaluationList',*/
+    customerEvaluation: 'Article List',
     orderList: 'Order List',
     errorPages: 'Error Pages',
     page401: '401',

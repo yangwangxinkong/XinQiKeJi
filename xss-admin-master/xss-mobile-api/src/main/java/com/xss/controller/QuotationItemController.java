@@ -1,24 +1,32 @@
 package com.xss.controller;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.xss.annotation.CurrentUser;
 import com.xss.annotation.Log;
+import com.xss.base.PageResult;
 import com.xss.base.PublicResult;
 import com.xss.base.PublicResultConstant;
 import com.xss.dao.PaymentMethodDao;
 import com.xss.dao.QuotationDao;
-import com.xss.domain.Quotation;
-import com.xss.service.OrderService;
-import com.xss.service.QuotationItemService;
-import com.xss.service.QuotationService;
+import com.xss.dao.QuotationItemDao;
+import com.xss.domain.*;
+import com.xss.domain.enums.FeeCategory;
+import com.xss.domain.enums.PayCategory;
+import com.xss.service.*;
+import com.xss.util.DateUtil;
+import com.xss.util.page.Page;
+import com.xss.util.page.Pageable;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.Date;
+import java.util.List;
 
 /**
  *  报价单明细管理接口
@@ -67,7 +75,6 @@ public class QuotationItemController {
             result = new PublicResult<Object>(PublicResultConstant.FAILED, null);
         }
         LOG.debug("get quotation list result = " + result.toString());
-        System.out.println("列表的返回值==="+jo.toJSONString());
         return result;
     }
 

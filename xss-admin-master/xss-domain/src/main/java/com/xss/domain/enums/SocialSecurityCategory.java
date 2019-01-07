@@ -5,7 +5,7 @@ package com.xss.domain.enums;
  */
 public enum SocialSecurityCategory {
 
-    ssc0(0, "养老"),ssc1(1, "失业"),ssc2(2, "工伤"),ssc3(3, "医疗"),ssc4(4, "生育"),ssc5(5, "残保"),ssc6(6, "大病");
+    ssc0(0, "养老"),ssc1(1, "失业"),ssc2(2, "工伤"),ssc3(3, "医疗"),ssc4(4, "生育"),ssc5(5, "残保");
 
     private int value;
     private String desc;

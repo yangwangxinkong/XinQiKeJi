@@ -63,6 +63,8 @@ public class OrderService extends BaseService<Order,Long> {
     private ShippingDao shippingDao;
     @Autowired
     private CouponCodeService couponCodeService;
+    @Autowired
+    private ShareService shareService;
     @Resource
     public void setBaseDao(OrderDao orderDao) {
         super.setBaseDao(orderDao);
@@ -472,7 +474,6 @@ public class OrderService extends BaseService<Order,Long> {
             deposit.setOrder(order);
             depositDao.save(deposit);
         }
-
         return order;
     }
 
@@ -676,6 +677,9 @@ public class OrderService extends BaseService<Order,Long> {
             orderLog.setOperator((operator != null && operator.getUsername() != null) ? operator.getUsername() : null == storeOperator ? "" : storeOperator.getUsername());
             orderLog.setOrder(order);
             orderLogDao.save(orderLog);
+
+            //返佣记录
+            shareService.saveOrderShare(order);
         } catch (Exception e) {
             e.printStackTrace();
         }

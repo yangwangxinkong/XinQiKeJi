@@ -34,6 +34,7 @@ com\xss\util\ComUtil.class
 com\xss\util\GenerationSequenceUtil.class
 com\xss\base\PublicResultConstant.class
 com\xss\util\PropertyUtils.class
+com\xss\util\QrcodeUtil.class
 com\xss\util\WebUtils.class
 com\xss\util\SmsSendUtil.class
 com\xss\util\StringUtil.class

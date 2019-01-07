@@ -5,10 +5,14 @@ import com.xss.annotation.Log;
 import com.xss.annotation.Pass;
 import com.xss.base.PublicResult;
 import com.xss.base.PublicResultConstant;
+import com.xss.domain.Configs;
 import com.xss.domain.Member;
+import com.xss.domain.enums.ShareCategory;
 import com.xss.domain.enums.SmsResource;
 import com.xss.domain.enums.SmsType;
+import com.xss.service.ConfigsService;
 import com.xss.service.MemberService;
+import com.xss.service.ShareService;
 import com.xss.service.SmsService;
 import com.xss.util.JWTUtil;
 import com.xss.util.JsonUtil;
@@ -45,16 +49,18 @@ import java.util.Map;
 public class RegisterController {
     @Autowired
     private MemberService memberService;
-
     @Autowired
     private SmsService smsService;
+    @Autowired
+    private ShareService shareService;
+
 
     @ApiOperation(value="手机密码注册", notes="body体参数,不需要Authorization",produces = "application/json")
     @ApiImplicitParams({@ApiImplicitParam(name = "requestJson", value = "",required = true, dataType = "String",paramType="body")})
     @PostMapping("")
     @Log(description="前台手机密码注册接口:/m/register")
     @Pass
-    public PublicResult<Map<String, Object>> register(@RequestParam String mobile, @RequestParam String password, @RequestParam String smsCode, HttpServletRequest request, HttpServletResponse response)throws Exception {
+    public PublicResult<Map<String, Object>> register(@RequestParam String mobile, @RequestParam String password, @RequestParam String smsCode, Long mid, ShareCategory shareCategory, HttpServletRequest request, HttpServletResponse response)throws Exception {
         Map<String, Object> map = new HashMap<>();
 
         if(StringUtils.isEmpty(mobile) || StringUtils.isEmpty(smsCode)){
@@ -95,7 +101,17 @@ public class RegisterController {
         member.setToken(token);
         member.setType(Member.Type.def);
         member.setCityName(null);
+        member.setShareBalance(BigDecimal.ZERO);
+        member.setHasShareOrder(false);
         memberService.save(member);
+
+        //分享者记录
+        try {
+            shareService.saveRegisterShare(member, mid, shareCategory);
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+
         JSONObject memberJo = JsonUtil.toJSONObject(member, new String[]{"id","username","name", "nickName", "mobile", "headImage"});
         memberJo.put("nickName", new String(Base64.decodeBase64(member.getNickName()), "utf-8"));
         //memberJo.put("token", JWTUtil.sign(member.getUsername(), member.getPassword()));
@@ -140,10 +156,10 @@ public class RegisterController {
 
     @ApiOperation(value="短信推广注册", notes="body体参数,不需要Authorization",produces = "application/json")
     @ApiImplicitParams({@ApiImplicitParam(name = "requestJson", value = "",required = true, dataType = "String",paramType="body")})
-    @PostMapping("/partner")
-    @Log(description="前台短信推广注册接口:/m/sms/register")
+    @PostMapping("/share")
+    @Log(description="前台短信推广注册接口:/m/register/share")
     @Pass
-    public PublicResult<Map<String, Object>> partnerRegister(@RequestParam String mobile, @RequestParam String name, @RequestParam String cityName, HttpServletRequest request, HttpServletResponse response)throws Exception {
+    public PublicResult<Map<String, Object>> shareRegister(@RequestParam String mobile, @RequestParam String name, @RequestParam String cityName, Long mid, ShareCategory shareCategory, HttpServletRequest request, HttpServletResponse response)throws Exception {
         Map<String, Object> map = new HashMap<>();
 
         Member persistent = memberService.findByMobile(mobile);
@@ -180,7 +196,18 @@ public class RegisterController {
         member.setToken(token);
         member.setType(Member.Type.sms);
         member.setCityName(cityName);
+        member.setShareBalance(BigDecimal.ZERO);
+        if (null != mid) {
+            member.setShareMember(memberService.find(mid));
+            member.setHasShareOrder(false);
+        }
         memberService.save(member);
+        //分享者记录
+        try {
+            shareService.saveRegisterShare(member, mid, shareCategory);
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
         JSONObject memberJo = JsonUtil.toJSONObject(member, new String[]{"id","username","name", "mobile", "headImage"});
         memberJo.put("nickName", new String(Base64.decodeBase64(member.getNickName()), "utf-8"));
         memberJo.put("token", token);

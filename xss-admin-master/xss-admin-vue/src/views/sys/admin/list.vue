@@ -205,8 +205,8 @@
       const validate_minlength = (rule, value,callback)=>{
         if(!value){
           callback()
-        } else if (value.length < 8  ||value.length>20){
-          callback(new Error('长度不小于8'))
+        } else if (value.length < 6){
+          callback(new Error('长度不小于6'))
         }else {
           callback()
         }
@@ -215,10 +215,8 @@
         value = this.temp.password
         if(!value){
           callback()
-        } else if (value.length < 8||value.length>20) {
-
-
-          callback(new Error('长度不小于8'))
+        } else if (value.length < 6){
+          callback(new Error('长度不小于6'))
         }else {
           callback()
         }

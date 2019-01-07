@@ -67,13 +67,6 @@
           </el-col>
         </el-form-item>
 
-        <el-form-item labelWidth="200px" label="大病 社保缴费基数最小值：" prop="ssc6BaseMin">
-          <el-col :span="5">
-            <el-input-number placeholder="请输入大病 社保缴费基数最小值：" required v-model="postForm.ssc6BaseMin" :min="0"></el-input-number>
-          </el-col>
-        </el-form-item>
-
-
         <el-form-item labelWidth="200px" label="公积金缴费基数最小值：" prop="providentBaseMin">
           <el-col :span="5">
             <el-input-number placeholder="请输入公积金缴费基数最小值：" required v-model="postForm.providentBaseMin" :min="0"></el-input-number>
@@ -108,7 +101,6 @@ const defaultForm = {
   ssc3BaseMin: undefined, //社保缴费基数 医疗 最小值
   ssc4BaseMin: undefined, //社保缴费基数 生育 最小值
   ssc5BaseMin: undefined, //社保缴费基数 残保 最小值
-  ssc6BaseMin: undefined, //社保缴费基数 大病 最小值
   providentBaseMin: undefined, //公积金缴费基数最小值
   providentBaseMax: undefined, //公积金缴费基数最大值
   id: undefined

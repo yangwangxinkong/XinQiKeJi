@@ -97,27 +97,6 @@ public class QuotationItem extends BaseEntity {
     /** 残保 公司缴费 */
     private BigDecimal disabilityCompany;
 
-
-
-    /*添加大病部分开始*/
-    /** 社保类别 大病 */
-    private SocialSecurityCategory serious;
-
-    /** 大病 基数 */
-    private BigDecimal seriousBase;
-
-    /** 大病 个人缴费 */
-    private BigDecimal seriousPerson;
-
-    /** 大病 公司缴费 */
-    private BigDecimal seriousCompany;
-    /*添加大病部分结束*/
-
-
-
-
-
-
     /** 公积金 */
     private String providentFundName;
 
@@ -626,39 +605,5 @@ public class QuotationItem extends BaseEntity {
         JSONObject jo = super.convertEntity(industry, DEFAULT_JSON_PARAMS);
 
         return jo;
-    }
-
-    public SocialSecurityCategory getSerious() {
-        return serious;
-    }
-
-    public void setSerious(SocialSecurityCategory serious) {
-        this.serious = serious;
-    }
-
-    @Column(precision = 21, scale = 2)
-    public BigDecimal getSeriousBase() {
-        return seriousBase;
-    }
-
-    public void setSeriousBase(BigDecimal seriousBase) {
-        this.seriousBase = seriousBase;
-    }
-
-    @Column(precision = 21, scale = 2)
-    public BigDecimal getSeriousPerson() {
-        return seriousPerson;
-    }
-
-    public void setSeriousPerson(BigDecimal seriousPerson) {
-        this.seriousPerson = seriousPerson;
-    }
-
-    public BigDecimal getSeriousCompany() {
-        return seriousCompany;
-    }
-
-    public void setSeriousCompany(BigDecimal seriousCompany) {
-        this.seriousCompany = seriousCompany;
     }
 }

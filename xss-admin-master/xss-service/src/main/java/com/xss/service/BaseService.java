@@ -151,6 +151,7 @@ public class BaseService<T, ID extends Serializable> {
     public void delete(ID... ids) {
         if (ids != null) {
             for (ID id : ids) {
+                System.out.println(baseDao);
                 delete(baseDao.findOne(id));
             }
         }

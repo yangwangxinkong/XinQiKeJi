@@ -53,8 +53,6 @@ public class AdminController {
         admin = adminService.find(admin.getId());
         JSONObject adminJo = JsonUtil.toJSONObject(admin, new String[]{"id","username","name"});
         //adminJo.put("token", JWTUtil.sign(admin.getUsername(), admin.getPassword()));
-
-
         JSONArray authoritiesJa = new JSONArray();
         Set<Role> roles = admin.getRoles();
         if (null != admin.getRoles() && !admin.getRoles().isEmpty()){
@@ -94,17 +92,7 @@ public class AdminController {
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public PublicResult<Boolean> save(@RequestBody JSONObject adminJson)throws Exception {
         LOG.info("save admin param : adminJson = " + adminJson.toString());
-
-
-
         try{
-            //添加管理员 密码长度为8至20位
-            String password=adminJson.getString("password");
-            LOG.info("password.length"+password.length());
-            if(password.length()<8 || password.length()>20){
-                return new PublicResult<Boolean>(PublicResultConstant.INVALID_BU_PASSWORD, false);
-            }
-
             Admin admin = new Admin();
 //            List<Long> roleIds = JSONArray.toJavaObject(adminJson.getJSONArray("roles"), List.class);
             List<Long> roleIds = new ArrayList<>();

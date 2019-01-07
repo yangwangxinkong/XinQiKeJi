@@ -60,7 +60,15 @@ let url = {
   payBaseDelete: '/api/payBase/delete',
 
   // 优惠券
-  couponCodeList: '/api/coupon/code/list'
+  couponCodeList: '/api/coupon/code/list',
+  // 分享管理
+  shareList: '/api/share/list',
+  // 意见反馈管理
+  feedbackList: '/api/feedback/list',
+  // 意见反馈信息
+  feedbackInfo: '/api/feedback/info',
+  // 申请人管理
+  proposerList: '/api/proposer/list',
 }
 
 for (var key in url) {

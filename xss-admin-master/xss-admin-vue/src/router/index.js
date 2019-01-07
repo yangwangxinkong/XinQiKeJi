@@ -213,7 +213,7 @@ export const asyncRouterMap = [
     meta: {
       title: 'marketing',
       icon: 'list',
-      roles: ['admin:coupon', 'admin:activity'] // you can set roles in root nav
+      roles: ['admin:coupon', 'admin:activity','admin:shareConfig'] // you can set roles in root nav
     },
     children: [
       { path: 'coupon', component: () => import('@/views/marketing/coupon/coupon'),name: 'coupon',meta:{title: 'coupon',roles: ['admin', 'admin:coupon'] }},
@@ -224,6 +224,13 @@ export const asyncRouterMap = [
       { path: 'activity/add', component: () => import('@/views/marketing/activity/add'),name: 'activityAdd',hidden: true,meta:{title: 'activityAdd',roles: ['admin', 'admin:activity']}},
       { path: 'activity/edit/:id(\\d+)', component: () => import('@/views/marketing/activity/edit'),name: 'activityEdit',hidden: true,meta:{title: 'activityEdit',roles: ['admin', 'admin:activity']}},
       { path: 'activity/info/:id(\\d+)', component: () => import('@/views/marketing/activity/info'),name: 'activityInfo',hidden: true,meta:{title: 'activityInfo',roles: ['admin', 'admin:activity']}},
+      { path: 'share/list', component: () => import('@/views/share/list'),name: 'shareList',meta:{title: 'shareList',roles: ['admin', 'admin:share']}},
+      { path: 'shareConfig/list',component: () => import('@/views/share_config/list'),name: 'shareConfigList',meta: { title: 'shareConfigList', roles: ['admin:shareConfig'] }},
+      { path: 'share_config/shareConfig/add', component: () => import('@/views/share_config/add'), name: 'shareConfigAdd', meta: { title: 'shareConfigAdd', roles: ['admin:shareConfig'] }, hidden: true },
+      { path: 'share_config/shareConfig/edit/:id(\\d+)', component: () => import('@/views/share_config/edit'), name: 'shareConfigEdit', meta: { title: 'shareConfigEdit', roles: ['admin:shareConfig'] }, hidden: true },
+      { path: 'feedback/list', component: () => import('@/views/feedback/list'),name: 'feedbackList',meta:{title: 'feedbackList',roles: ['admin', 'admin:feedback']}},
+      { path: 'feedback/info/:id(\\d+)', component: () => import('@/views/feedback/info'),name: 'feedbackInfo',hidden: true,meta:{title: 'feedbackInfo',roles: ['admin', 'admin:feedback']}},
+      { path: 'proposer/list', component: () => import('@/views/proposer/list'),name: 'proposerList',meta:{title: 'proposerList',roles: ['admin', 'admin:proposer']}},
     ]
   },
   {
@@ -235,7 +242,7 @@ export const asyncRouterMap = [
     meta: {
       title: 'content',
       icon: 'list',
-      roles: ['admin:navigation', 'admin:adPosition', 'admin:ad', 'admin:articleCategory', 'admin:article', 'admin:tag']
+      roles: ['admin:navigation', 'admin:adPosition', 'admin:ad', 'admin:articleCategory', 'admin:article', 'admin:tag','admin:customer']
     },
     children: [
       /*{ path: 'navigation_list', component: () => import('@/views/content/navigation/list'), name: 'navigationList', meta: { title: 'navigationList', roles: ['admin:navigation'] }},
@@ -251,8 +258,12 @@ export const asyncRouterMap = [
       { path: 'article/list',component: () => import('@/views/content/article/list'),name: 'articleList',meta: { title: 'articleList', roles: ['admin:article'] }},
       { path: 'article/add', component: () => import('@/views/content/article/add'), name: 'addArticle', meta: { title: 'addArticle', roles: ['admin:article'] }, hidden: true },
       { path: 'article/edit/:id(\\d+)', component: () => import('@/views/content/article/edit'), name: 'editArticle', meta: { title: 'editArticle', roles: ['admin:article'] }, hidden: true },
-      /*{ path: 'tag/list',component: () => import('@/views/content/tag/list'),name: 'tagList',meta: { title: 'tagList', roles: ['admin:tag'] }}*/
-    ]
+      /*{ path: 'tag/list',component: () => import('@/views/content/tag/list'),name: 'tagList',meta: { title: 'tagList', roles: ['admin:tag'] }},*/
+      { path: 'customerEvaluation/list',component: () => import('@/views/content/customer/list'),name: 'customerEvaluationList',meta: { title: 'customerEvaluationList', roles: ['admin:customer'] }},
+      { path: 'customerEvaluation/add', component: () => import('@/views/content/customer/add'), name: 'customerEvaluationList', meta: { title: 'customerEvaluationList', roles: ['admin:customer'] }, hidden: true },
+      { path: 'customerEvaluation/edit/:id(\\d+)', component: () => import('@/views/content/customer/edit'), name: 'customerEvaluationList', meta: { title: 'customerEvaluationList', roles: ['admin:customer'] }, hidden: true }
+
+  ]
   },
   { path: '*', redirect: '/404', hidden: true }
 ]

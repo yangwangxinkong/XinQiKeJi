@@ -175,10 +175,6 @@ export default {
         name: 'ssc5',
         value: 5,
         desc: '残保'
-      }, {
-        name: 'ssc6',
-        value: 6,
-        desc: '大病'
       }],
       cityList: [],
       cityCategory: [],

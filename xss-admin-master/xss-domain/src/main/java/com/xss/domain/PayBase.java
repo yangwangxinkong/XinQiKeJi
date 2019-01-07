@@ -23,7 +23,7 @@ import java.util.List;
 public class PayBase extends BaseEntity {
 
     public static final String[] DEFAULT_JSON_PARAMS = new String[]{"id", "socialBaseMin", "socialBaseMax", "providentBaseMin"
-            , "providentBaseMax", "ssc0BaseMin", "ssc1BaseMin", "ssc2BaseMin", "ssc3BaseMin", "ssc4BaseMin", "ssc5BaseMin","ssc6BaseMin"};
+            , "providentBaseMax", "ssc0BaseMin", "ssc1BaseMin", "ssc2BaseMin", "ssc3BaseMin", "ssc4BaseMin", "ssc5BaseMin"};
 
     /**
      * 城市
@@ -69,11 +69,6 @@ public class PayBase extends BaseEntity {
      * 社保缴费基数 残保 最小值
      */
     private BigDecimal ssc5BaseMin;
-
-    /**
-     * 社保缴费基数 大病 最小值
-     */
-    private BigDecimal ssc6BaseMin;
 
     /**
      * 公积金缴费基数最小值
@@ -295,14 +290,5 @@ public class PayBase extends BaseEntity {
         }
 
         return jo;
-    }
-    /*大病基数最小值*/
-    @Column( precision = 21, scale = 2)
-    public BigDecimal getSsc6BaseMin() {
-        return ssc6BaseMin;
-    }
-
-    public void setSsc6BaseMin(BigDecimal ssc6BaseMin) {
-        this.ssc6BaseMin = ssc6BaseMin;
     }
 }

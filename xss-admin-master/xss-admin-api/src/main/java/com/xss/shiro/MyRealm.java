@@ -66,6 +66,7 @@ public class MyRealm extends AuthorizingRealm {
         Set<String> roleNameSet = new HashSet<>();
         for(Role role : roles){
             roleNameSet.add(role.getName());
+            System.out.println("===========================MyRealm类中doGetAuthorizationInfo方法执行了！！！名字：："+role.getName());
         }
 
 //        Role role = roleService.selectOne(new EntityWrapper<Role>().eq("role_code", userToRole.getRoleCode()));

@@ -46,7 +46,7 @@
         win-width="100"
         show-overflow-tooltip>
         <template slot-scope="scope">
-          <span>￥{{scope.row.socialBaseMax}}</span>
+          <span>￥{{scope.row.socialBaseMin}}</span>
         </template>
       </el-table-column>
 

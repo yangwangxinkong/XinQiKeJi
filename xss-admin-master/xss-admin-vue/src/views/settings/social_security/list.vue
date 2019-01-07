@@ -181,9 +181,6 @@
         }, {
           value: '5',
           desc: '残保'
-        }, {
-          value: '6',
-          desc: '大病'
         }],
         cityList: [],
         list: [],

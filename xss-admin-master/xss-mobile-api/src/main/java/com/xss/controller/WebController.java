@@ -4,30 +4,35 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.sun.org.apache.xpath.internal.operations.Quo;
 import com.xss.annotation.Log;
+import com.xss.annotation.Pass;
 import com.xss.base.PageResult;
 import com.xss.base.PublicResult;
 import com.xss.base.PublicResultConstant;
 import com.xss.domain.*;
-import com.xss.domain.enums.AdPositionType;
-import com.xss.domain.enums.CalculatorCategory;
-import com.xss.domain.enums.FeeCategory;
-import com.xss.domain.enums.PayCategory;
+import com.xss.domain.enums.*;
 import com.xss.service.*;
 import com.xss.util.DateTimeUtil;
 import com.xss.util.DateUtil;
+import com.xss.util.JWTUtil;
+import com.xss.util.JsonUtil;
 import com.xss.util.page.Page;
 import com.xss.util.page.Pageable;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.apache.commons.codec.binary.*;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
+import java.util.*;
+import java.util.Base64;
 
 import static com.xss.config.ConfigInit.SYSTEM_CONFIGS;
 
@@ -59,6 +64,8 @@ public class WebController {
     private ServiceFeeSettingService serviceFeeSettingService;
     @Autowired
     private ActivityService activityService;
+    @Autowired
+    private ProposerService proposerService;
 
     /**
      * 获取首页广告位数据、最新公告、服务热线电话
@@ -447,6 +454,28 @@ public class WebController {
         return quotation;
     }
 
+    @ApiOperation(value="保存申请人信息", notes="body体参数,不需要Authorization",produces = "application/json")
+    @ApiImplicitParams({@ApiImplicitParam(name = "requestJson", value = "",required = true, dataType = "String",paramType="body")})
+    @PostMapping("/proposer/save")
+    @Log(description="PC保存申请人信息接口:/m/web/proposer/save")
+    @Pass
+    public PublicResult<Map<String, Object>> saveProposer(@RequestParam String phone, @RequestParam String name, HttpServletRequest request, HttpServletResponse response)throws Exception {
+
+        try {
+            if (StringUtils.isEmpty(phone) || StringUtils.isEmpty(name)) {
+                return new PublicResult<>(PublicResultConstant.PARAM_ERROR, null);
+            }
+            Proposer proposer = new Proposer();
+            proposer.setName(name);
+            proposer.setPhone(phone);
+            proposerService.save(proposer);
+
+            return new PublicResult<>(PublicResultConstant.SUCCESS, null);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return new PublicResult<>(PublicResultConstant.ERROR, null);
+    }
     /**
      * 一个月的费用计算 套餐价格
      * @param quotationTemp

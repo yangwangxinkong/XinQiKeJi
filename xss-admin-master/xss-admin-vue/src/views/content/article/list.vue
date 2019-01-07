@@ -116,6 +116,7 @@
           type: 'warning'
         }).then(() => {
           var ids = this.multipleSelection.map(item => item.id).join()
+          //remove({ids:ids}).then(response => {
           remove({ids:ids}).then(response => {
             if(response.data.result==='00000000'){
               this.$notify({

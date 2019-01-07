@@ -74,6 +74,7 @@ export default {
         body_class: 'panel-body ',
         object_resizing: false,
         toolbar: this.toolbar.length > 0 ? this.toolbar : toolbar,
+        fontsize_formats: "8px 10px 12px 14px 18px 24px 36px",
         menubar: this.menubar,
         plugins: plugins,
         end_container_on_empty_block: true,

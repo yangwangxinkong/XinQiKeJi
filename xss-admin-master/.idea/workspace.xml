@@ -1,79 +1,341 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57d8af8f-d9a0-4e0a-bdaf-076992bc2cc9" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/xss-admin-vue/node_modules/" />
+    <list default="true" id="fd6dd9b6-bd1e-493b-ba73-cd584d8f1cf0" name="Default" comment="文章相关接口开发">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_javase_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/0269cd9adcd78ac9ec9846164a8d61f9efb8f7dd.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/0296faf1e2d9f2373341b00473f3d0f9955e013a.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/055ed9f196c3520d39c99a07780ac71a09a660c9.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/063c6b197d00227ea2f3fd8db3a3c01d634cbf30.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/06866e344d76171c0294d0b61e12f9aa86536988.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/09ea868d3c2dac9eb3317bccddf0ee79be4a817d.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/10b2b54b11e519f53feef822aa4c73a3da834f32.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/1501451a424275575e0f30fcbaa38e5c0d32183d.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/15804db8bc1a41b6c54621e08309edad199d09b1.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/173cc482f33f0036c1076eac36b342833241129b.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/178f4a3c8d35d73720ecc02b5946fbb4ab14ba28.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/1991fdb64dcbc6480418fa26b058d37e63af3700.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/1e187abf50b13bc3c619cf855b36247807ea1020.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/1f34cf166f5a53e7487607c30b4fe51ab618f286.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/2425aa05486ec712d27e611e0fc0a5e3be0f2efd.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/254c979d881192207c109fb7a4ae71644af72728.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/25c51ee9e21f39d13e299d9f6a1c1f25508823ba.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/25f160a146535664f7bec2552680fa591550f908.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/26ba9a9b8e90ffe2e0fde7fd5ceefcb9f21aff96.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/29c8b4d411008d2be85ee0fc2cc4341be0b68b7e.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/2a4b7ccea0139c18d79c34642657bd400c54df43.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/2a7f43f316987f1f8d9ab88896b094cf2770c347.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/2dfdfd5a681801afc073716baf83a9e233ff6179.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/2e093acb18006c511128c1ddbf42ef7985fe4043.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/307bfa1154ab07d0232be38f60ba3a956bd23347.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/33197bbc63b36014db907e6de8d68866878cb432.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/344edebaebc877d6a117311a8aea17c1985e7184.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/34e0ff50d31d3f7685da547d05eed693c5b0c1f0.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/38a6b7b58bbe50e94e0f5d5da151151794096e77.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/3916a3292d401780a652c72484cf02a98fc75894.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/3a8e9c020b2058a1436a94cb906bf8b55b8d53e4.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/3cb188655e75796002ade5f8b44e118c033e21f7.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/3e5163f801714e6ef5a3ca81aeb21f0f88f5acc8.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/438037ed0dfbde9983a5f8323968962553757742.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/464d4998bacb14ce977622f064586fc81cb8f44d.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/49a4f61b1acf08895d28d7b4fc836de3ac52478c.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/4f2eb3226012b56f4a57c215230497f2d1cf15c8.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/51562d514d895a0784586858d7fa40719d091e83.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/5456dd3708cb9500d5b172929510aa11b3004eb8.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/567d2df5a1b5d75884b17d591503de5cb399216e.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/57791873c75e0c999c49dc8f3ec259dc9cb11708.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/5c89f23abaacdf0b0231b1f5c02e789b6401253d.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/5d7e65f266a6570a18d6a51effe10e6f8ae8cbfc.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/5dcadc5f0169652af319b8ea9a65757539012409.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/677c1f146b7f7ca71015f39827984a8720896ced.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/6bf715a0ee9ad205abd9a5e30c5150fc7f60cc08.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/7136db4a1717fa5cda0473304ce79e4bc4082e8d.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/73d9c645a4a89b94d2bea6ad6dedc36cdffbe56e.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/7f6f9b6d3a04861942fb79d03ad942be94a2d078.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/7fd8fb81baf8daa61c0d85b5773df5e252f6ba74.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/8d601424a5c2beb709cca744768f102891e14225.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/8f8ec2301510650f5c7c9ac063ee3ecfd25c0b59.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/9119ac98372e245aa9586485726e7153ab195aae.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/9181f18a9ee0000aac2e69ca2b13a22ed805c0f6.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/976eb41db1dc3da459e8407aea5879d2a3935439.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/98e633a1ea1fd3e21fff3246012918e904247e8f.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/9a70fdc66e9ac96e4efd558ffccc7d601c1f72dc.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/9c8cc4ff48c2d41a0e2f7250233319fd7132fc5c.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/9cb35916dd77f39d3ad926e55be91fd3871ad23a.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/a5be32957c90239b71462c1eaad49ce31c7e6ffd.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/a63d027895b2bf32368b7fdd047d2d982eec56cd.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/a991de2bb7223c5fc3ed0251d257521ea8ea024f.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/aa6ef5fba1d85d57225fd6b8c2f70f300f10fccd.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/ab17a63b2da4656110ce83fa8e36f00e39be9d59.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/abb839332e096ff81467dbf9eb343996984615ad.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/ad59972e9f23be4497b0115d168221dfcf17d7b4.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/ba19621a5ee693173adbebcb4747575f65043ba6.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/bb1f12e6b4e52fbc005216fb4a856e5d67f08390.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/bd3e1b5324621213da38324317ccbbee45b8bc0f.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/c451eb99c52d24836426e5cf8cb3c28f68aec83b.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/c539f6777fc766f6c7bde3fc1495c8bcaf791f0c.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/c6c947858a1555ff291dd4a812fa881e7f473816.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/c74697c5dcdf4a04c89ece62499a2d3a36ad72c4.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/c77d92342b1874c3e527ff539dd5e12fd010e7dc.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/c9a1b31b7d5aaf5b28ef33640ed3e0dfcc4bd9c0.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/cc015e4adfe54fecdec31a85d12651c45f0cce6b.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/cc48227cd4ed8291c21fa0e4d7648cfe220bf32f.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/ccf46f1dbebe4d338d58f859550cbb0efabb9dac.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/cd8e188d43cccc0b419548b2c40fe892fa66b1ed.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/cec0be9451fbabcfd9ed63040b52b9949f2f62f2.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/cf1fc1e346dc2dc699280f881afebddbff5f3baf.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/d106259265381c7e18a642a582928b96b183704d.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/d201b36c2371544a7f18d18bf6d6a6dd0ab38adc.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/d39a9535b0bf4bfb02a6fe4963666948473b8c4e.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/d6548186c37495d892267fee5b23cf511685b397.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/daa29b31f595bbd31d01f0f0c4014517112e2760.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/e00958b21ddc8a7d68e932dbc0b8c7f960d39a07.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/e1dd3e4842a5041cccb0449705aa389b5b1cb8a7.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/e5409d19a0a00f623d42880b5dfed0a2598ac09d.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/e61a93dfb35d6f7bf779378991351e58269f0d05.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/e6eec38af79c66ac5bcb709413c3737abcf347b0.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/ed038bfe4e2231abf2f4d981cb65895b8cd012c8.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/eddeae88e736169f683c0a292c94717726441f9d.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/ee143044c8eda72a332d1450b122ca4f64f9c514.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/ee75239df833fec2900adec00eb0a90ce715abbe.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/f01cbfcfcc99f0c7d3557494a52558860d8b7f5e.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/f1493d45558ba4755a538037522c5ef2a731a19f.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/f4ae248863ddb2354fdd5ea6199a1654bd58a3cc.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/f6249e6d5b7001ec91a1cb950fbc32e9a345337f.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/f6d7b716c43324fc17fada4a510b5188cfd55cd4.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/f7c007693bdf4c1f202471c86d6de013c3342d70.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-admin-vue/node_modules/.cache/babel-loader/fde3377f99ce0d8c7fd16981c5a2bcfcddf49631.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/controller/CustomerEvaluationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_39.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_39.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_belerweb_pinyin4j_2_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_belerweb_pinyin4j_2_5_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_t3hnar_scala_bcrypt_2_10_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_t3hnar_scala_bcrypt_2_10_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_annotations_2_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_annotations_2_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_17_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_17_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_195.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_195.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_icu_icu4j_2_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_icu_icu4j_2_6_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_restassured_json_path_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_restassured_json_path_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_restassured_rest_assured_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_restassured_rest_assured_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_restassured_rest_assured_common_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_restassured_rest_assured_common_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_restassured_xml_path_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_restassured_xml_path_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_4_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jaxen_jaxen_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jaxen_jaxen_1_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jdom_jdom_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jdom_jdom_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_42.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_42.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_55.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_55.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_26_incubating.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_26_incubating.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_5_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_5_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_0_0_CR1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_0_0_CR1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mindrot_jbcrypt_0_3m.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mindrot_jbcrypt_0_3m.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_16.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_0_23_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_0_23_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xmlParserAPIs_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xmlParserAPIs_2_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xom_xom_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xom_xom_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/xss-admin.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/xss-admin.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/controller/ShareConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/controller/ShareConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-admin-api/src/main/resources/config/xss.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-admin-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-admin-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-admin-vue/src/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/xss-admin-vue/src/lang/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-admin-vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/xss-admin-vue/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-admin-vue/src/views/share_config/shareConfig/shareConfigDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/xss-admin-vue/src/views/share_config/shareConfig/shareConfigDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/controller/ShareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/controller/ShareController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-mobile-api/src/main/resources/config/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xss-mobile-api/src/main/resources/config/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-mobile-api/src/main/resources/config/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xss-mobile-api/src/main/resources/config/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-mobile-api/src/main/resources/config/constant.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xss-mobile-api/src/main/resources/config/constant.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-mobile-api/xss-mobile-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-mobile-api/xss-mobile-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/ShareConfigService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/ShareConfigService.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/xss-common/target/" />
-    <ignored path="$PROJECT_DIR$/xss-mobile-api/target/" />
-    <ignored path="$PROJECT_DIR$/xss-service/target/" />
-    <ignored path="$PROJECT_DIR$/xss-dao/target/" />
-    <ignored path="$PROJECT_DIR$/xss-admin-api/target/" />
     <ignored path="$PROJECT_DIR$/xss-domain/target/" />
+    <ignored path="$PROJECT_DIR$/xss-dao/target/" />
+    <ignored path="$PROJECT_DIR$/xss-service/target/" />
+    <ignored path="$PROJECT_DIR$/xss-admin-api/target/" />
+    <ignored path="$PROJECT_DIR$/xss-mobile-api/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/QuotationService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="367" column="37" selection-start-line="367" selection-start-column="37" selection-end-line="367" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/Quotation.java">
+        <entry file="file://$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/controller/ShareConfigController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="737" column="86" lean-forward="true" selection-start-line="737" selection-start-column="86" selection-end-line="737" selection-end-column="86" />
+            <state relative-caret-position="54">
+              <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/QuotationItem.java">
+        <entry file="jar://H:/Warehouse/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="664" selection-start-line="664" selection-end-line="664" />
-              <folding>
-                <element signature="e#2926#2927#0" expanded="true" />
-                <element signature="e#2968#2969#0" expanded="true" />
-                <element signature="e#12375#12376#0" expanded="true" />
-                <element signature="e#12405#12406#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="428">
+              <caret line="749" selection-start-line="749" selection-end-line="749" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/QuotationItemService.java">
+        <entry file="jar://H:/Warehouse/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+            <state relative-caret-position="176">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/PayBase.java">
+        <entry file="jar://H:/Warehouse/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-              <folding>
-                <element signature="e#2071#2072#0" expanded="true" />
-                <element signature="e#2107#2108#0" expanded="true" />
-                <element signature="e#4467#4468#0" expanded="true" />
-                <element signature="e#4506#4507#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-12">
+              <caret line="967" selection-start-line="967" selection-end-line="967" />
             </state>
           </provider>
         </entry>
@@ -83,56 +345,141 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>quotationItem</find>
-      <find>quotationItems</find>
-      <find>getPersonalAmount</find>
-      <find>getCompanyAmount</find>
-      <find>getAllAmount</find>
-      <find>getOrderAmount</find>
-      <find>convertEntity</find>
-      <find>amount</find>
-      <find>ssc5BaseMin</find>
-      <find>createQuotationItem</find>
-      <find>saveQuotationPayInfo</find>
-      <find>setPayCategory</find>
-      <find>SingleResult</find>
-      <find>singleResult</find>
-      <find>residenceType</find>
-      <find>zeroThroughTen</find>
-      <find>fixed</find>
-      <find>fixedValue</find>
-      <find>ratio</find>
-      <find>socialSecurityCategory</find>
-      <find>codeValue</find>
-      <find>quotation</find>
-      <find>monthFee</find>
-      <find>getProvidentFundName</find>
+      <find>title</find>
+      <find>submitFormAdd</find>
+      <find>changeTag</find>
+      <find>closePage</find>
+      <find>multipleSelection</find>
+      <find>imageSuccessCBK</find>
+      <find>ids</find>
+      <find>response401</find>
+      <find>handleFilter</find>
+      <find>pageable</find>
+      <find>articleList</find>
+      <find>shareleList</find>
+      <find>shareList</find>
+      <find>分享管理</find>
+      <find>shareConfigList</find>
+      <find>formatDate</find>
+      <find>residenceTypeList</find>
+      <find>dataForm</find>
+      <find>residenceTypeId</find>
+      <find>isTop</find>
+      <find>handleDelete</find>
+      <find>handleRefresh</find>
+      <find>SocialSecurityCategory</find>
+      <find>selectChange</find>
+      <find>ShareConfig</find>
+      <find>Query</find>
+      <find>entityManager</find>
+      <find>shareDefault</find>
+      <find>share</find>
+      <find>articleCategory</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>ap</replace>
+      <replace>ssc</replace>
+      <replace>pf</replace>
+      <replace>fc</replace>
+      <replace>ServiceFeeSetting</replace>
+      <replace>SocialSecurityRatioSetting</replace>
+      <replace>providentFundRatioSetting</replace>
+      <replace>socialSecurityRatioSetting</replace>
+      <replace>serviceFeeSetting</replace>
+      <replace>ProvidentFundRatioSetting</replace>
+      <replace>2018/8/29</replace>
+      <replace>com.xss.domain</replace>
+      <replace>zzl</replace>
+      <replace>bmz-admin-vue</replace>
+      <replace>新社保</replace>
+      <replace>sys</replace>
+      <replace>Config</replace>
+      <replace>Configs</replace>
+      <replace>系统配置</replace>
+      <replace>configs</replace>
+      <replace>article</replace>
+      <replace>xss</replace>
+      <replace>小豆社保</replace>
+      <replace>Invoice</replace>
+      <replace>invoice</replace>
+      <replace>com.xss</replace>
+      <replace>domain</replace>
+      <replace>api.xiaodoushebao.com</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>F:\workspace_idea\xss\xss-admin-master\xss-common\src\main\java\com.xss</dir>
+      <dir>F:\workspace_idea\xss\xss-admin-master\xss-common</dir>
+      <dir>F:\workspace_idea\xss\xss-admin-master\xss-domain\src\main\java\com\xss\domain</dir>
+    </dirStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/pojo/QuotationPojo.java" />
-        <option value="$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/QuotationItem.java" />
-        <option value="$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/controller/QuotationItemController.java" />
-        <option value="$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/PayBase.java" />
-        <option value="$PROJECT_DIR$/xss-mobile-api/pom.xml" />
         <option value="$PROJECT_DIR$/xss-mobile-api/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/MemberService.java" />
-        <option value="$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/controller/QuotationController.java" />
-        <option value="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/QuotationItemService.java" />
-        <option value="$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/SocialSecurityRatioSetting.java" />
-        <option value="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/QuotationService.java" />
-        <option value="$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/Quotation.java" />
+        <option value="$PROJECT_DIR$/xss-admin-api/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/xss-admin-api/src/main/resources/config/application-dev.properties" />
+        <option value="$PROJECT_DIR$/xss-admin-api/src/main/resources/config/application-prod.properties" />
+        <option value="$PROJECT_DIR$/xss-mobile-api/src/main/resources/config/constant.properties" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/shareSet/shareSetting.vue" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/sys/role/components/roleDetail.vue" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/share/list.vue" />
+        <option value="$PROJECT_DIR$/xss-mobile-api/src/main/resources/config/application-prod.properties" />
+        <option value="$PROJECT_DIR$/xss-mobile-api/src/main/resources/config/application-dev.properties" />
+        <option value="$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/Configs.java" />
+        <option value="$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/enums/CustomerEvaluation.java" />
+        <option value="$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/controller/CustomerEvaluationContriller.java" />
+        <option value="$PROJECT_DIR$/xss-admin-api/src/test/java/TestCustomerEvaluation.java" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/content/article/components/articleDetail.vue" />
+        <option value="$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/controller/ShareController.java" />
+        <option value="$PROJECT_DIR$/xss-service/src/main/java/com/xss/util/page/Page.java" />
+        <option value="$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/shiro/MyRealm.java" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/api/article.js" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/content/customer/components/date.js" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/content/article/list.vue" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/content/customer/add.vue" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/content/customer/components/articleDetail.vue" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/content/customer/edit.vue" />
+        <option value="$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/CustomerEvaluation.java" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/content/customer/components/customerDetail.vue" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/content/customer/list.vue" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/api/customer.js" />
+        <option value="$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/controller/CustomerEvaluationController.java" />
+        <option value="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/BaseService.java" />
+        <option value="$PROJECT_DIR$/xss-dao/src/main/java/com/xss/dao/CustomerEvaluationDao.java" />
+        <option value="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/CustomerEvaluationService.java" />
+        <option value="$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/shiro/JWTFilter.java" />
+        <option value="$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/shiro/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/controller/CustomerEvaluationController.java" />
+        <option value="$PROJECT_DIR$/xss-dao/src/main/java/com/xss/dao/ShareConfigDao.java" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/lang/en.js" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/share_config/shareConfig/customerDetail.vue" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/share_config/add.vue" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/share_config/edit.vue" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/api/shareConfig.js" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/share_config/list.vue" />
+        <option value="$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/enums/SharecCnfigEnums.java" />
+        <option value="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/SocialSecurityRatioSettingService.java" />
+        <option value="$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/ShareConfig.java" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/router/index.js" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/lang/zh.js" />
+        <option value="$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/ShareConfigService.java" />
+        <option value="$PROJECT_DIR$/xss-admin-vue/src/views/share_config/shareConfig/shareConfigDetail.vue" />
+        <option value="$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/controller/ShareConfigController.java" />
       </list>
     </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -143,32 +490,111 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="H:\Warehouse" />
         <option name="mavenHome" value="H:/javaTool/apache-maven-3.5.0" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="downloadDocsAutomatically" value="true" />
-        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="createModuleGroups" value="true" />
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="xss-domain" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="xss-domain" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="xss-common" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="xss-common" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="xss-admin-master" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="xss-admin-master" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="MavenRunner">
     <option name="delegateBuildToMaven" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,81 +605,25 @@
             <path>
               <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-mobile-api" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-admin-api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-mobile-api" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-admin-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-mobile-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-mobile-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-mobile-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-mobile-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-mobile-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xss" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-service" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-admin-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-service" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-admin-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -261,7 +631,7 @@
             <path>
               <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-service" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-admin-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -270,27 +640,81 @@
             <path>
               <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="xss-service" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-admin-vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-admin-vue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-admin-vue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-admin-vue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="share_config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-admin-vue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="share_config" type="462c0819:PsiDirectoryNode" />
+              <item name="shareConfig" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-domain" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xss" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xss-admin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xss-admin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="xss-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="true" />
-    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="xss-admin-master" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -298,13 +722,48 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="indexcontr&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-mobile-api/src/main/java/com/xss/controller/IndexController.java&#10;membercont&#9;PSI&#9;JAVA://com.xss.controller.MemberController&#10;member&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-domain/src/main/java/com/xss/domain/Member.java&#10;articlecon&#9;PSI&#9;JAVA://com.xss.controller.ArticleController&#10;ordercon&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-mobile-api/src/main/java/com/xss/controller/OrderController.java&#10;order&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-domain/src/main/java/com/xss/domain/Order.java&#10;paymentcon&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-mobile-api/src/main/java/com/xss/controller/PaymentController.java&#10;weixin&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-mobile-api/src/main/java/com/xss/controller/WeixinController.java&#10;members&#9;PSI&#9;JAVA://com.xss.service.MemberService&#10;login&#9;PSI&#9;JAVA://com.xss.controller.LoginController&#10;ordercontroller&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-mobile-api/src/main/java/com/xss/controller/OrderController.java&#10;orderser&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-service/src/main/java/com/xss/service/OrderService.java&#10;paymentser&#9;PSI&#9;JAVA://com.xss.service.PaymentService&#10;paymentme&#9;PSI&#9;JAVA://com.xss.dao.PaymentMethodDao&#10;weixinser&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-service/src/main/java/com/xss/service/WeixinService.java&#10;sms&#9;PSI&#9;JAVA://com.xss.controller.SmsController&#10;paymentsta&#9;PSI&#9;JAVA://com.xss.domain.Order.PaymentStatus&#10;orderstatu&#9;PSI&#9;JAVA://com.xss.domain.Order.OrderStatus&#10;invoi&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-mobile-api/src/main/java/com/xss/controller/InvoiceController.java&#10;quotation&#9;PSI&#9;JAVA://com.xss.domain.Quotation&#10;articlecontroller&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-mobile-api/src/main/java/com/xss/controller/ArticleController.java&#10;Area&#9;PSI&#9;JAVA://com.xss.domain.Area&#10;membercontro&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-mobile-api/src/main/java/com/xss/controller/MemberController.java&#10;membercontroller&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-mobile-api/src/main/java/com/xss/controller/MemberController.java&#10;singleImage4&#9;ACTION&#9;null&#10;articlecategorycon&#9;PSI&#9;JAVA://com.xss.controller.ArticleCategoryController&#10;articlecate&#9;PSI&#9;JAVA://com.xss.domain.ArticleCategory&#10;config&#9;PSI&#9;JAVA://com.xss.config.ConfigInit&#10;configs&#9;PSI&#9;JAVA://com.xss.domain.Configs&#10;QuotationController&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-mobile-api/src/main/java/com/xss/controller/QuotationController.java&#10;articled&#9;PSI&#9;JAVA://com.xss.dao.ArticleDao&#10;artic&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-domain/src/main/java/com/xss/domain/Article.java&#10;articlecontroll&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-mobile-api/src/main/java/com/xss/controller/ArticleController.java&#10;articlecat&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-domain/src/main/java/com/xss/domain/ArticleCategory.java&#10;article&#9;PSI&#9;JAVA://com.xss.domain.Article&#10;articlecateg&#9;PSI&#9;JAVA://com.xss.controller.ArticleCategoryController&#10;zh.j&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-admin-vue/src/lang/zh.js&#10;articlecategorycont&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-admin-api/src/main/java/com/xss/controller/ArticleCategoryController.java&#10;articlecategorydao&#9;PSI&#9;JAVA://com.xss.dao.ArticleCategoryDao&#10;articlec&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-domain/src/main/java/com/xss/domain/ArticleCategory.java&#10;articlecategory&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-domain/src/main/java/com/xss/domain/ArticleCategory.java&#10;adcontroller&#9;PSI&#9;JAVA://com.xss.controller.AdController&#10;ad&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-domain/src/main/java/com/xss/domain/Ad.java&#10;adpositionser&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-service/src/main/java/com/xss/service/AdPositionService.java&#10;adpositionda&#9;FILE&#9;file://F:/workspace_idea/xss/xss-admin-master/xss-dao/src/main/java/com/xss/dao/AdPositionDao.java&#10;admin&#9;PSI&#9;JAVA://com.xss.domain.Admin&#10;city&#9;PSI&#9;JAVA://com.xss.domain.City" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545286671909" />
-    <property name="last_opened_file_path" value="H:/weCharGameCms" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546769120045" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="F:/程序员像妹子表白专用代码" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="H:\xss1\xss2\xss-admin-master\xss-admin-vue\node_modules\eslint" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.selected.package.standard" value="H:\xss1\xss2\xss-admin-master\xss-admin-vue\node_modules\eslint" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.40917107" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="ts.external.directory.path" value="H:\javaTool\IntelliJ IDEA 2018.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\xss1\xss2\xss-admin-master\xss-admin-vue\src\views" />
+      <recent name="H:\xss1\xss2\xss-admin-master\xss-admin-vue\src\api" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xss.controller" />
+      <recent name="com.xss.service" />
+      <recent name="com.xss.dao" />
+      <recent name="com.xss.domain.enums" />
+      <recent name="com.xss.util.wxap" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\xss1\xss2\xss-admin-master\xss-admin-vue\src\api" />
+      <recent name="H:\xss1\xss2\xss-admin-master\xss-admin-vue\src\views\content\share_config" />
+      <recent name="H:\xss1\xss2\xss-admin-master\xss-admin-vue\src\views\content\customer" />
+      <recent name="H:\xss1\xss2\xss-admin-master\xss-admin-vue\src\views\content\article" />
+      <recent name="F:\workspace_idea\xss\xss-admin-master\xss-admin-vue\src\api" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -322,504 +781,1032 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.21049784" />
+    <option name="contentProportion" value="0.16666667" />
   </component>
-  <component name="RunManager" selected="Spring Boot.XssMobileApplication">
-    <configuration name="SpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <component name="RunManager" selected="JUnit.TestCustomerEvaluation.test">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCustomerEvaluation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestCustomerEvaluation" />
       <module name="xss-admin-api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCustomerEvaluation.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xss-admin-api" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomerEvaluation" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="xss-admin-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xss.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xss.SpringbootApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XssMobileApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="XssMobileApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="xss-mobile-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xss.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xss.XssMobileApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.TestCustomerEvaluation" />
+      <item itemvalue="JUnit.TestCustomerEvaluation.test" />
+      <item itemvalue="Spring Boot.SpringbootApplication" />
+      <item itemvalue="Spring Boot.XssMobileApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringbootApplication" />
+        <item itemvalue="Spring Boot.XssMobileApplication" />
+        <item itemvalue="JUnit.TestCustomerEvaluation.test" />
+        <item itemvalue="Application.TestCustomerEvaluation" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="SpringGeneralSettings">
-    <option name="allowAutoConfigurationMode" value="true" />
-  </component>
-  <component name="SvnConfiguration">
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>C:\Users\zhens\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="H:\xss1\xss2\xss-admin-master" />
+          <option name="myCopyRoot" value="H:\xss1\xss2\xss-admin-master" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="H:\xss1\xss2\xss-admin-master\.idea" />
+          <option name="myCopyRoot" value="H:\xss1\xss2\xss-admin-master\.idea" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="H:\xss1\xss2\xss-admin-master\xss-admin-api" />
+          <option name="myCopyRoot" value="H:\xss1\xss2\xss-admin-master\xss-admin-api" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="H:\xss1\xss2\xss-admin-master\xss-common" />
+          <option name="myCopyRoot" value="H:\xss1\xss2\xss-admin-master\xss-common" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="H:\xss1\xss2\xss-admin-master\xss-dao" />
+          <option name="myCopyRoot" value="H:\xss1\xss2\xss-admin-master\xss-dao" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="H:\xss1\xss2\xss-admin-master\xss-domain" />
+          <option name="myCopyRoot" value="H:\xss1\xss2\xss-admin-master\xss-domain" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="H:\xss1\xss2\xss-admin-master\xss-mobile-api" />
+          <option name="myCopyRoot" value="H:\xss1\xss2\xss-admin-master\xss-mobile-api" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="H:\xss1\xss2\xss-admin-master\xss-service" />
+          <option name="myCopyRoot" value="H:\xss1\xss2\xss-admin-master\xss-service" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="H:\xss1\xss2\xss-admin-master" />
+          <option name="myCopyRoot" value="H:\xss1\xss2\xss-admin-master" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="57d8af8f-d9a0-4e0a-bdaf-076992bc2cc9" name="Default Changelist" comment="" />
-      <created>1545105702466</created>
+      <changelist id="fd6dd9b6-bd1e-493b-ba73-cd584d8f1cf0" name="Default" comment="" />
+      <created>1535637605764</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1545105702466</updated>
-      <workItem from="1545105703828" duration="20458000" />
-      <workItem from="1545143623056" duration="1313000" />
-      <workItem from="1545184511811" duration="1361000" />
-      <workItem from="1545185952049" duration="23458000" />
-      <workItem from="1545271532370" duration="5376000" />
+      <updated>1535637605764</updated>
+      <workItem from="1535637621043" duration="5473000" />
+      <workItem from="1535725342647" duration="6180000" />
+      <workItem from="1535732230394" duration="2243000" />
+      <workItem from="1535784768744" duration="6794000" />
+      <workItem from="1537019295391" duration="4669000" />
+      <workItem from="1537148724140" duration="188000" />
+      <workItem from="1537275203248" duration="882000" />
+      <workItem from="1537276162844" duration="5719000" />
+      <workItem from="1537358882520" duration="197000" />
+      <workItem from="1537451991991" duration="4241000" />
+      <workItem from="1537494544613" duration="98000" />
+      <workItem from="1537582177651" duration="10927000" />
+      <workItem from="1537598364827" duration="21506000" />
+      <workItem from="1537882661925" duration="5563000" />
+      <workItem from="1537927430689" duration="26000" />
+      <workItem from="1538055451183" duration="4778000" />
+      <workItem from="1538097570519" duration="634000" />
+      <workItem from="1538224155453" duration="8684000" />
+      <workItem from="1538574385583" duration="3585000" />
+      <workItem from="1538897345419" duration="6338000" />
+      <workItem from="1538921162361" duration="5359000" />
+      <workItem from="1539048108636" duration="1177000" />
+      <workItem from="1539084640867" duration="5196000" />
+      <workItem from="1539101544699" duration="69000" />
+      <workItem from="1539101641864" duration="1108000" />
+      <workItem from="1539132005195" duration="2079000" />
+      <workItem from="1539176933811" duration="5407000" />
+      <workItem from="1539222012572" duration="184000" />
+      <workItem from="1539264186490" duration="8101000" />
+      <workItem from="1539309531197" duration="144000" />
+      <workItem from="1539322879558" duration="552000" />
+      <workItem from="1539607365482" duration="1389000" />
+      <workItem from="1539671637330" duration="685000" />
+      <workItem from="1539685630149" duration="5508000" />
+      <workItem from="1539706855633" duration="1798000" />
+      <workItem from="1539829789642" duration="3276000" />
+      <workItem from="1539853976504" duration="3235000" />
+      <workItem from="1540438601238" duration="2061000" />
+      <workItem from="1540536060425" duration="13255000" />
+      <workItem from="1540778960852" duration="2064000" />
+      <workItem from="1541000767641" duration="703000" />
+      <workItem from="1541123616952" duration="1293000" />
+      <workItem from="1541401608964" duration="6278000" />
+      <workItem from="1541417009164" duration="31000" />
+      <workItem from="1541428706314" duration="6498000" />
+      <workItem from="1541514349820" duration="1607000" />
+      <workItem from="1541553770341" duration="9534000" />
+      <workItem from="1541576465488" duration="10773000" />
+      <workItem from="1541985761774" duration="2004000" />
+      <workItem from="1542024952603" duration="691000" />
+      <workItem from="1542075364639" duration="770000" />
+      <workItem from="1545706953606" duration="8620000" />
+      <workItem from="1545790207239" duration="21889000" />
+      <workItem from="1545831330102" duration="3086000" />
+      <workItem from="1545877422386" duration="30249000" />
+      <workItem from="1545909261382" duration="162000" />
+      <workItem from="1545962347188" duration="5897000" />
+      <workItem from="1545969531973" duration="21937000" />
+      <workItem from="1545993262284" duration="2489000" />
+      <workItem from="1546048770577" duration="13224000" />
+      <workItem from="1546333828301" duration="1626000" />
+      <workItem from="1546394643873" duration="12337000" />
+      <workItem from="1546440013135" duration="702000" />
+      <workItem from="1546480780910" duration="2397000" />
+      <workItem from="1546567966950" duration="31991000" />
+      <workItem from="1546759992399" duration="9736000" />
     </task>
+    <task id="LOCAL-00001" summary="系统配置表前后端开发">
+      <created>1537023976685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537023976685</updated>
+    </task>
+    <task id="LOCAL-00002" summary="微信端首页前后端接口开发">
+      <created>1537359034349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537359034349</updated>
+    </task>
+    <task id="LOCAL-00003" summary="文章相关接口开发">
+      <created>1537455714256</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537455714256</updated>
+    </task>
+    <task id="LOCAL-00004" summary="后台广告位、文章页面和接口细节优化">
+      <created>1537607589521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537607589521</updated>
+    </task>
+    <task id="LOCAL-00005" summary="文章相关接口开发">
+      <created>1537622152056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537622152056</updated>
+    </task>
+    <task id="LOCAL-00006" summary="登录、注册和短信接口相关">
+      <created>1537628040629</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1537628040629</updated>
+    </task>
+    <task id="LOCAL-00007" summary="注册和登录接口优化">
+      <created>1537887275719</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1537887275719</updated>
+    </task>
+    <task id="LOCAL-00008" summary="细节优化">
+      <created>1538235615687</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1538235615687</updated>
+    </task>
+    <task id="LOCAL-00009" summary="后台用户管理功能开发，接口细节优化。">
+      <created>1538935736021</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1538935736021</updated>
+    </task>
+    <task id="LOCAL-00010" summary="用户接口细节优化">
+      <created>1539098856337</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1539098856337</updated>
+    </task>
+    <task id="LOCAL-00011" summary="用户接口优化">
+      <created>1539185194472</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1539185194473</updated>
+    </task>
+    <task id="LOCAL-00012" summary="发票信息管理">
+      <created>1539274878897</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1539274878897</updated>
+    </task>
+    <task id="LOCAL-00013" summary="订单发票索取接口开发">
+      <created>1539705347882</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1539705347882</updated>
+    </task>
+    <task id="LOCAL-00014" summary="短信模块对接；微信菜单、响应事件发布功能开发。">
+      <created>1540779632107</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1540779632107</updated>
+    </task>
+    <task id="LOCAL-00015" summary="微信支付相关细节优化">
+      <created>1541438261043</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1541438261043</updated>
+    </task>
+    <task id="LOCAL-00016" summary="细节优化">
+      <created>1541608591874</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1541608591874</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51966000" />
+  <component name="TestHistory">
+    <history-entry file="TestCustomerEvaluation_test - 2018.12.27 at 14h 48m 36s.xml">
+      <configuration name="TestCustomerEvaluation.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomerEvaluation_test - 2018.12.27 at 14h 51m 34s.xml">
+      <configuration name="TestCustomerEvaluation.test" configurationId="JUnit" />
+    </history-entry>
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="367896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
+      <window_info id="Capture Tool" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
       <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="TODO" order="0" weight="0.32925472" />
-      <window_info anchor="bottom" id="Spring" order="1" weight="0.32925472" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.36818686" />
-      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.34371525" />
-      <window_info anchor="bottom" id="Java Enterprise" order="6" weight="0.32925472" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Message" order="9" />
-      <window_info anchor="bottom" id="Find" order="10" weight="0.40823138" />
-      <window_info anchor="bottom" id="Run" order="11" />
-      <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.42491657" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info id="JRebel" order="4" sideWeight="0.5090498" side_tool="true" weight="0.19712794" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Nl-Palette" order="6" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49095023" visible="true" weight="0.22654584" />
+      <window_info id="Structure" order="8" weight="0.25" />
+      <window_info id="Web" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Console" order="0" sideWeight="0.39425588" side_tool="true" weight="0.4564254" />
+      <window_info anchor="bottom" id="JRebel Executor" order="1" />
+      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4989339" weight="0.25139043" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49741268" weight="0.4538376" />
+      <window_info anchor="bottom" id="Spring" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.21802002" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5010661" side_tool="true" weight="0.5539488" />
+      <window_info anchor="bottom" id="SVN Repositories" order="7" visible="true" weight="0.42540622" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" sideWeight="0.49738905" weight="0.6838996" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49741268" weight="0.30674157" />
+      <window_info anchor="bottom" id="Debug" order="11" sideWeight="0.6057441" weight="0.48153618" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="Problems" order="15" />
+      <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Enterprise" order="17" weight="0.32925472" />
+      <window_info anchor="bottom" id="Database Changes" order="18" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="19" sideWeight="0.8235608" visible="true" weight="0.35150167" />
+      <window_info anchor="bottom" id="TypeScript" order="20" />
+      <window_info anchor="right" id="Maven Projects" order="0" visible="true" weight="0.23041776" />
+      <window_info anchor="right" id="Properties" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="right" id="Commander" order="8" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="11" />
+      <window_info anchor="right" id="Preview" order="12" weight="0.32995737" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Capture Tool" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="JRebel" order="4" sideWeight="0.5090498" side_tool="true" weight="0.19712794" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Nl-Palette" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49095023" visible="true" weight="0.14658849" />
+      <window_info id="Structure" order="8" weight="0.25" />
+      <window_info id="Web" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Console" order="0" sideWeight="0.39425588" side_tool="true" weight="0.4564254" />
+      <window_info anchor="bottom" id="JRebel Executor" order="1" />
+      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4989339" weight="0.26140156" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49741268" weight="0.4538376" />
+      <window_info anchor="bottom" id="Spring" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.24471635" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5010661" side_tool="true" weight="0.5539488" />
+      <window_info anchor="bottom" id="SVN Repositories" order="7" visible="true" weight="0.42540622" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" sideWeight="0.49738905" weight="0.6838996" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49741268" weight="0.30674157" />
+      <window_info anchor="bottom" id="Debug" order="11" sideWeight="0.6057441" weight="0.48153618" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="Problems" order="15" />
+      <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Enterprise" order="17" weight="0.32925472" />
+      <window_info anchor="bottom" id="Database Changes" order="18" />
+      <window_info anchor="bottom" id="Run Dashboard" order="19" sideWeight="0.8235608" weight="0.7497219" />
+      <window_info anchor="bottom" id="TypeScript" order="20" />
+      <window_info anchor="right" id="Maven Projects" order="0" visible="true" weight="0.23041776" />
+      <window_info anchor="right" id="Properties" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="right" id="Commander" order="8" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="11" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="create" />
+    <MESSAGE value="系统配置表前后端开发" />
+    <MESSAGE value="微信端首页前后端接口开发" />
+    <MESSAGE value="后台广告位、文章页面和接口细节优化" />
+    <MESSAGE value="文章相关接口开发" />
+    <MESSAGE value="登录、注册和短信接口相关" />
+    <MESSAGE value="注册和登录接口优化" />
+    <MESSAGE value="后台用户管理功能开发，接口细节优化。" />
+    <MESSAGE value="用户接口细节优化" />
+    <MESSAGE value="用户接口优化" />
+    <MESSAGE value="发票信息管理" />
+    <MESSAGE value="订单发票索取接口开发" />
+    <MESSAGE value="短信模块对接；微信菜单、响应事件发布功能开发。" />
+    <MESSAGE value="微信支付相关细节优化" />
+    <MESSAGE value="created" />
+    <MESSAGE value="细节优化" />
+    <MESSAGE value="import" />
+    <option name="LAST_COMMIT_MESSAGE" value="import" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/PaymentMethodService.java">
+    <entry file="jar://H:/Warehouse/org/springframework/spring-orm/4.3.9.RELEASE/spring-orm-4.3.9.RELEASE-sources.jar!/org/springframework/orm/jpa/SharedEntityManagerCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="400">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://H:/Warehouse/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+    <entry file="jar://H:/Warehouse/org/springframework/spring-tx/4.3.9.RELEASE/spring-tx-4.3.9.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="164" column="51" lean-forward="true" selection-start-line="164" selection-start-column="51" selection-end-line="164" selection-end-column="51" />
+        <state relative-caret-position="176">
+          <caret line="283" selection-start-line="283" selection-end-line="283" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://H:/Warehouse/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
+    <entry file="jar://H:/Warehouse/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE-sources.jar!/org/springframework/aop/framework/AdvisedSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="737" selection-start-line="737" selection-end-line="737" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://H:/Warehouse/org/springframework/spring-core/4.3.9.RELEASE/spring-core-4.3.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/OrderItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/controller/PayBaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/controller/QuotationItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-mobile-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/controller/OrderCancelApplyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/enums/PayCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://H:/Warehouse/org/springframework/spring-core/4.3.9.RELEASE/spring-core-4.3.9.RELEASE-sources.jar!/org/springframework/util/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="160" column="26" selection-start-line="160" selection-start-column="26" selection-end-line="160" selection-end-column="26" />
+        <state relative-caret-position="176">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
           <folding>
-            <element signature="e#5749#5750#0" expanded="true" />
-            <element signature="e#5790#5791#0" expanded="true" />
+            <element signature="e#4693#4694#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://H:/Warehouse/com/auth0/java-jwt/3.2.0/java-jwt-3.2.0-sources.jar!/com/auth0/jwt/JWT.java">
+    <entry file="jar://H:/Warehouse/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/servlet/AbstractShiroFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://H:/Warehouse/com/auth0/java-jwt/3.2.0/java-jwt-3.2.0-sources.jar!/com/auth0/jwt/interfaces/Payload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="61" column="49" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://H:/Warehouse/com/auth0/java-jwt/3.2.0/java-jwt-3.2.0-sources.jar!/com/auth0/jwt/interfaces/Claim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-mobile-api/src/main/resources/config/application-prod.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-mobile-api/src/main/resources/config/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1304" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-mobile-api/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-common/src/main/java/com.xss/util/JWTUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://H:/Warehouse/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/FlushModeType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://H:/Warehouse/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-682">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://H:/Warehouse/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/TypedQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/MemberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="188" column="57" selection-start-line="188" selection-start-column="51" selection-end-line="188" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://H:/Warehouse/org/springframework/data/spring-data-commons/1.13.4.RELEASE/spring-data-commons-1.13.4.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/SocialSecurityRatioSettingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/ConfigsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/math/BigInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="1189" column="35" selection-start-line="1189" selection-start-column="35" selection-end-line="1189" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-common/src/main/java/com.xss/util/BigDecimalUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="30" column="87" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Long.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/enums/SocialSecurityCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="1216" column="29" selection-start-line="1216" selection-start-column="29" selection-end-line="1216" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/ServiceFeeSetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2106">
-          <caret line="114" column="22" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
+        <state relative-caret-position="-237">
+          <caret line="361" selection-start-line="361" selection-end-line="361" />
           <folding>
-            <element signature="e#2364#2365#0" expanded="true" />
-            <element signature="e#2386#2387#0" expanded="true" />
+            <element signature="e#17830#18095#0" expanded="true" />
+            <element signature="e#18094#18095#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/enums/CalculatorCategory.java">
+    <entry file="jar://H:/Warehouse/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/servlet/ProxiedFilterChain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="52" />
+        <state relative-caret-position="365">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/List.java">
+    <entry file="jar://H:/Warehouse/org/apache/tomcat/embed/tomcat-embed-core/8.5.15/tomcat-embed-core-8.5.15-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="492" column="9" selection-start-line="492" selection-start-column="9" selection-end-line="492" selection-end-column="9" />
+        <state relative-caret-position="168">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/PayBaseService.java">
+    <entry file="jar://H:/Warehouse/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="168">
+          <caret line="847" selection-start-line="847" selection-end-line="847" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/Configs.java">
+    <entry file="jar://H:/Warehouse/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/subject/support/SubjectCallable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="55" column="11" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="11" />
-          <folding>
-            <element signature="e#2531#2532#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="97">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/enums/PayFrom.java">
+    <entry file="jar://H:/Warehouse/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/subject/support/DelegatingSubject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="184">
+          <caret line="386" selection-start-line="386" selection-end-line="386" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://H:/Warehouse/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/EntityManager.java">
+    <entry file="jar://H:/Warehouse/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/servlet/AdviceFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+        <state relative-caret-position="168">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/enums/FeeCategory.java">
+    <entry file="jar://H:/Warehouse/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/servlet/OncePerRequestFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="176">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/City.java">
+    <entry file="jar://H:/Warehouse/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.15/tomcat-embed-websocket-8.5.15-sources.jar!/org/apache/tomcat/websocket/server/WsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
-          <folding>
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3004#3005#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-mobile-api/src/main/java/com/xss/controller/QuotationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2099">
-          <caret line="320" column="34" selection-start-line="320" selection-start-column="34" selection-end-line="320" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/controller/ServiceFeeSettingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
-          <folding>
-            <element signature="e#3850#3851#0" expanded="true" />
-            <element signature="e#3881#3882#0" expanded="true" />
-            <element signature="e#3933#3934#0" expanded="true" />
-            <element signature="e#3969#3970#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/controller/SocialSecurityRatioSettingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="103" column="76" selection-start-line="103" selection-start-column="50" selection-end-line="103" selection-end-column="76" />
+        <state relative-caret-position="27">
+          <caret line="108" column="61" selection-start-line="108" selection-start-column="50" selection-end-line="108" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/controller/CouponController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1458">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-orm/4.3.9.RELEASE/spring-orm-4.3.9.RELEASE-sources.jar!/org/springframework/orm/jpa/ExtendedEntityManagerCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="346" selection-start-line="346" selection-end-line="346" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/SocialSecurityRatioSetting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="-2003">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding>
             <element signature="e#1705#1706#0" expanded="true" />
             <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#1931#1932#0" expanded="true" />
-            <element signature="e#1952#1953#0" expanded="true" />
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2403#2404#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/QuotationService.java">
+    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/SocialSecurityRatioSettingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="367" column="37" selection-start-line="367" selection-start-column="37" selection-end-line="367" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/QuotationItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/PayBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="316">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
-            <element signature="e#2071#2072#0" expanded="true" />
-            <element signature="e#2107#2108#0" expanded="true" />
-            <element signature="e#4467#4468#0" expanded="true" />
-            <element signature="e#4506#4507#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/QuotationItem.java">
+    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/ShareConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="664" selection-start-line="664" selection-end-line="664" />
+        <state relative-caret-position="330">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
           <folding>
-            <element signature="e#2926#2927#0" expanded="true" />
-            <element signature="e#2968#2969#0" expanded="true" />
-            <element signature="e#12375#12376#0" expanded="true" />
-            <element signature="e#12405#12406#0" expanded="true" />
+            <element signature="e#1320#1321#0" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xss-domain/src/main/java/com/xss/domain/Quotation.java">
+    <entry file="jar://H:/Warehouse/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/EntityManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="737" column="86" lean-forward="true" selection-start-line="737" selection-start-column="86" selection-end-line="737" selection-end-column="86" />
+        <state relative-caret-position="43">
+          <caret line="587" column="29" selection-start-line="587" selection-start-column="29" selection-end-line="587" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/TypedQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="53" column="39" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="1191" selection-start-line="1191" selection-end-line="1191" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="41" column="41" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/views/settings/social_security/components/detail.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2727">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/views/content/article/components/articleDetail.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="45" column="89" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/lang/zh.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="100" column="29" lean-forward="true" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="229" column="140" selection-start-line="229" selection-start-column="136" selection-end-line="229" selection-end-column="140" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/views/selectDialogTest.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1689" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/permission.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1365">
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/views/content/article/list.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#el-table#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/views/share_config/list.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-service/src/main/java/com/xss/service/ShareConfigService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="35" column="71" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setBaseDao#0;class#ShareConfigService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-vue/src/views/share_config/shareConfig/shareConfigDetail.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="135" column="56" selection-start-line="135" selection-start-column="56" selection-end-line="135" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-core/4.3.9.RELEASE/spring-core-4.3.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE-sources.jar!/org/springframework/aop/aspectj/MethodInvocationProceedingJoinPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/aspect/RecordLogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/aspect/AspectHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/aspect/ParameterCheckAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE-sources.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="617" selection-start-line="617" selection-end-line="617" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE-sources.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE-sources.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="675" selection-start-line="675" selection-end-line="675" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="749" selection-start-line="749" selection-end-line="749" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://H:/Warehouse/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="967" selection-start-line="967" selection-end-line="967" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xss-admin-api/src/main/java/com/xss/controller/ShareConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>xss-mobile-api</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.40917107" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -832,8 +1819,9 @@
           </splitter-proportions>
         </settings>
       </state>
-      <state key="ScopeChooserConfigurable.UI">
+      <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

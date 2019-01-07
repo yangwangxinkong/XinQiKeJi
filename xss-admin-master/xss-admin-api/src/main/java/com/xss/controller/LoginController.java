@@ -53,12 +53,6 @@ public class LoginController {
             @ValidationParam("username,password")@RequestBody JSONObject requestJson) throws Exception{
         //由于 @ValidationParam注解已经验证过mobile和passWord参数，所以可以直接get使用没毛病。
         String username = requestJson.getString("username");
-
-        String password=requestJson.getString("password");
-        if(password.length()<8||password.length()>20){
-            return  new PublicResult<>(PublicResultConstant.INVALID_BU_PASSWORD,null);
-
-        }
 //        if(!StringUtil.checkMobileNumber(mobile)){
 //            return new PublicResult<>(PublicResultConstant.MOBILE_ERROR, null);
 //        }
@@ -227,16 +221,9 @@ public class LoginController {
     @PostMapping("/password")
     public PublicResult<String> resetPassWord (@CurrentUser Admin currentUser,@ValidationParam("oldPassword,newPassword,rePassword")
     @RequestBody JSONObject requestJson ) throws Exception{
-        //两次输入的密码 是否一致
         if (!requestJson.getString("newPassword").equals(requestJson.getString("rePassword"))) {
             return new PublicResult<>(PublicResultConstant.INVALID_RE_PASSWORD, null);
         }
-
-        //密码长度不能小于8或大于20
-        if(requestJson.getString("newPassword").length()<8||requestJson.getString("newPassword").length()>20){
-            return  new PublicResult<>(PublicResultConstant.INVALID_BU_PASSWORD, null);
-        }
-        //用户名 密码 错误
         if (!DigestUtils.md5Hex(requestJson.getString("oldPassword")).equals(currentUser.getPassword())){
             return new PublicResult<>(PublicResultConstant.INVALID_USERNAME_PASSWORD, null);
         }

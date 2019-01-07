@@ -78,44 +78,8 @@ import LangSelect from '@/components/LangSelect'
 import ThemePicker from '@/components/ThemePicker'
 import {changePwdToDb} from '@/api/login'
 
-//修改密码的校验
 export default {
   data(){
-    const validator_oldPassword = (rule, value, callback) => {
-      if (value==='') {
-        callback(new Error('密码不能为空！'))
-      } else if(this.temp.oldPassword.length<8||this.temp.oldPassword.length>20){
-        callback(new Error('原密码长度为8至20之间！'))
-      } else {
-        callback()
-      }
-    }
-    const validator_newPassword = (rule, value, callback) => {
-      if (this.temp.newPassword.length< 8||this.temp.newPassword.length>20) {
-        callback(new Error('密码长度为8至20之间！'))
-        if (value==='') {
-          callback(new Error('请重新输入密码！'))
-        }
-      } else if(value==this.temp.oldPassword){
-        callback(new Error('原密码不能和新密码不能一致,请重新输入 ！'))
-      } else {
-        callback()
-      }
-    }
-    const validator_rePassword = (rule, value, callback) => {
-      if (this.temp.rePassword.length< 8||this.temp.rePassword.length>20) {
-        callback(new Error('密码长度为8至20之间！'))
-        if (value==='') {
-          callback(new Error('请重新输入密码！'))
-        }
-      } else if(value!==this.temp.newPassword){
-        callback(new Error('两次密码不一致,请重新输入 ！'))
-      } else {
-        callback()
-      }
-    }
-
-
   return{
     dialogFormVisible: false,
     temp: {
@@ -123,10 +87,10 @@ export default {
         newPassword:'',
         rePassword:''
       },
-    rules: {                                                                                   //失去焦点的事件
-      oldPassword: [{ required: true, message: '旧密码必填', trigger: 'change' },{validator:validator_oldPassword,trigger:'blur'}],
-      newPassword:[{ required: true, message: '新密码必填', trigger: 'change' },{validator:validator_newPassword,trigger:'blur'}],
-      rePassword:[{ required: true, message: '确认密码必填', trigger: 'change' },{validator:validator_rePassword,trigger:'blur'}],
+    rules: {
+      oldPassword: [{ required: true, message: '旧密码必填', trigger: 'change' }],
+      newPassword:[{ required: true, message: '新密码必填', trigger: 'change' }],
+      rePassword:[{ required: true, message: '确认密码必填', trigger: 'change' }],
       },
     }
   },
@@ -154,10 +118,10 @@ export default {
         location.reload()// In order to re-instantiate the vue-router object to avoid bugs
       })
     },
-    showChangePwd(){    //修改密码去空
-      this.temp.oldPassword=''
-      this.temp.newPassword=''
-      this.temp.rePassword=''
+    showChangePwd(){
+      this.oldPassword=''
+      this.newPassword=''
+      this.rePassword=''
       this.dialogFormVisible = true
     },
     changePwd(){

@@ -12,10 +12,9 @@ import com.xss.dao.PaymentMethodDao;
 import com.xss.dao.QuotationDao;
 import com.xss.dao.ResidenceTypeDao;
 import com.xss.domain.*;
-import com.xss.domain.enums.CalculatorCategory;
-import com.xss.domain.enums.FeeCategory;
-import com.xss.domain.enums.PayCategory;
+import com.xss.domain.enums.*;
 import com.xss.service.*;
+import com.xss.util.BigDecimalUtils;
 import com.xss.util.DateUtil;
 import com.xss.util.FreemarkerUtils;
 import com.xss.util.JWTUtil;
@@ -25,6 +24,7 @@ import com.xss.util.page.Pageable;
 import freemarker.template.Template;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
@@ -208,21 +208,16 @@ public class QuotationController {
             Quotation quotationTemp = quotationDao.findOne(quotation.getId());
             // 如果更新的数据为空 或者 次报价单已经关联有订单时，重新生成报价单  加大容错
             if(quotationTemp == null || quotationTemp.getOrder() != null) {
-                //生成新的报价单
                 quotationTemp = new Quotation();
-                //给新的报价单添加缴费开始年月
                 if(StringUtils.isEmpty(quotation.getStartDate())) {
                     quotationTemp.setStartDate(DateUtil.format(new Date(), "yyyy-MM"));
                 }
-                //给新的报价单添加缴费月份为一个月
                 if (quotation.getMonthCount() == null) {
                     quotationTemp.setMonthCount(1);
                 }
-                //给新的报价单添加缴费结束年月（因默只交一个月的，所以日期与开始时间相同。）
                 if(StringUtils.isEmpty(quotation.getEndDate())) {
                     quotationTemp.setEndDate(quotationTemp.getStartDate());
                 }
-                //给新的报价单添加缴费类型方式  pc0(0, "新参"),pc1(1, "续缴"),pc2(2, "补缴")
                 if(quotation.getPayCategory() == null) {
                     quotationTemp.setPayCategory(PayCategory.pc0);
                 }
@@ -262,18 +257,14 @@ public class QuotationController {
             if(quotation.getCity() != null && quotation.getCity().getId() != null) {
                 quotationTemp.setCity(cityDao.findOne(quotation.getCity().getId()));
             }
-            //获取授权码
             String token = request.getHeader("Authorization");
             if (StringUtils.hasText(token) && null == quotationTemp.getMember()){
                 String userNo = JWTUtil.getUserNo(token);
-                //根据会员名，查询会员的信息
                 Member user = memberService.findByUsername(userNo);
-                //当获取的会员信息不为空时，将会员信息添加到新的报价单中
                 if (null != user){
                     quotationTemp.setMember(user);
                 }
             }
-            //重新保存报价单
             quotationService.saveQuotaion(quotationTemp);
 
 //            // 如果更新的数据为空  容错率更新

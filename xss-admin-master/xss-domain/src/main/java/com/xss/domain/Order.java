@@ -8,10 +8,7 @@ package com.xss.domain;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.xss.domain.enums.InvoiceStatus;
-import com.xss.util.BigDecimalUtils;
-import com.xss.util.DateTimeUtil;
-import com.xss.util.DateUtil;
-import com.xss.util.JsonUtil;
+import com.xss.util.*;
 import org.apache.commons.codec.binary.*;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.ArrayUtils;
@@ -219,6 +216,9 @@ public class Order extends BaseEntity {
 
 	/** 已付金额 */
 	private BigDecimal amountPaid;
+
+	/** 返佣金额 */
+	private BigDecimal shareMoney = BigDecimal.ZERO;
 
 	/** 赠送积分 */
 	private Long point;
@@ -461,6 +461,14 @@ public class Order extends BaseEntity {
 		this.amountPaid = amountPaid;
 	}
 
+	@Column(precision = 21, scale = 2)
+	public BigDecimal getShareMoney() {
+		return shareMoney;
+	}
+
+	public void setShareMoney(BigDecimal shareMoney) {
+		this.shareMoney = shareMoney;
+	}
 
 	/**
 	 * 获取赠送积分
@@ -1121,7 +1129,12 @@ public class Order extends BaseEntity {
 			JSONObject pmJo = JsonUtil.toJSONObject(order.getPaymentMethod(), new String[]{"id", "name", "code"});
 			jo.put("paymentMethod", pmJo);
 		}
-
+		//返佣金额
+		if (null != order.getShareMoney()) {
+			jo.put("shareMoney", CurrencyMethod.currency(order.getShareMoney()));
+		}else{
+			jo.put("shareMoney", "0.00");
+		}
 		jo.put("orderStatusId", order.getOrderStatus().getValue());
 		jo.put("paymentStatusId", order.getPaymentStatus().getValue());
 		jo.put("orderStatusDesc", order.getOrderStatus().getDesc());

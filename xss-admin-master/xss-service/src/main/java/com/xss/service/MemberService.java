@@ -10,6 +10,7 @@ import com.xss.dao.DepositDao;
 import com.xss.dao.MemberDao;
 import com.xss.domain.*;
 import com.xss.domain.enums.Gender;
+import com.xss.domain.enums.ShareCategory;
 import com.xss.util.DateUtil;
 import com.xss.util.page.Page;
 import com.xss.util.page.Pageable;
@@ -48,6 +49,10 @@ public class MemberService extends BaseService<Member, Long> {
 	private DepositDao depositDao;
 	@Autowired
 	private ConfigsService configsService;
+	@Autowired
+	private ShareService shareService;
+	@Autowired
+	private ShareLogService shareLogService;
 
 	@Resource
 	public void setBaseDao(MemberDao memberDao) {
@@ -130,7 +135,7 @@ public class MemberService extends BaseService<Member, Long> {
 				BigDecimal vipDiscount = new BigDecimal(discountConfig.getCodeValue());
 				member.setVipDiscount(vipDiscount);
 			}
-			depositMemo = "会员充值成功，有效期至" + DateUtil.format(vipExpireDate) + ",优惠折扣：" + discountConfig.getCodeValue();
+			depositMemo = "会员充值成功，有效期至" + DateUtil.format(vipExpireDate) + ",每单服务费：" + discountConfig.getCodeValue();
 		}
 		member.setIsVip(true);//成为vip会员
 
@@ -337,6 +342,8 @@ public class MemberService extends BaseService<Member, Long> {
 				member.setLoginIp(request.getRemoteAddr());
 				member.setLoginDate(new Date());
 				member.setNature(Member.Nature.buyer);//注册用户默认为买家
+				member.setShareBalance(BigDecimal.ZERO);
+				member.setHasShareOrder(false);
 
 
 				member.setPassword(DigestUtils.md5Hex(DigestUtils.md5Hex(member.getMemberDefaultPassward())));
@@ -376,4 +383,6 @@ public class MemberService extends BaseService<Member, Long> {
 		}
 		return member;
 	}
+
+
 }

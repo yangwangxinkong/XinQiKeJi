@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/xss-admin-api/xss-admin-api.iml" filepath="$PROJECT_DIR$/xss-admin-api/xss-admin-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xss-admin-master.iml" filepath="$PROJECT_DIR$/xss-admin-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xss-common/xss-common.iml" filepath="$PROJECT_DIR$/xss-common/xss-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xss-dao/xss-dao.iml" filepath="$PROJECT_DIR$/xss-dao/xss-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xss-domain/xss-domain.iml" filepath="$PROJECT_DIR$/xss-domain/xss-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xss-mobile-api/xss-mobile-api.iml" filepath="$PROJECT_DIR$/xss-mobile-api/xss-mobile-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xss-service/xss-service.iml" filepath="$PROJECT_DIR$/xss-service/xss-service.iml" />
+    </modules>
+  </component>
+</project>

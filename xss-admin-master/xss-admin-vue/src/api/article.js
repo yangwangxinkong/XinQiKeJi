@@ -20,7 +20,7 @@ export function save(data) {
   return request({
     url: '/api/article/save',
     method: 'post',
-    data
+    params:data
   })
 }
 
@@ -28,6 +28,7 @@ export function save(data) {
 export function remove(ids) {
   return request({
     url: '/api/article/delete',
+    /*url: '/api/customerEvaluation/list',*/
     method: 'get',
     params: ids
   })

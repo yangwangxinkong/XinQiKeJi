@@ -44,8 +44,15 @@
         show-overflow-tooltip>
       </el-table-column>
       <el-table-column
-        prop="name"
+        prop="nickName"
         label="昵称"
+        width="120"
+        sortable="custom"
+        show-overflow-tooltip>
+      </el-table-column>
+      <el-table-column
+        prop="name"
+        label="姓名"
         width="120"
         sortable="custom"
         show-overflow-tooltip>

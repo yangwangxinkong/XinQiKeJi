@@ -184,6 +184,8 @@ public class MemberController {
             }
             member.setType(Member.Type.def);
             member.setCityName(null);
+            member.setShareBalance(BigDecimal.ZERO);
+            member.setHasShareOrder(false);
             memberService.save(member, current);
         }
         return new PublicResult<>(PublicResultConstant.SUCCESS,"操作成功");

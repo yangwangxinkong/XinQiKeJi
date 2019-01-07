@@ -2,21 +2,29 @@ package com.xss.service;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.xss.dao.QuotationDao;
 import com.xss.dao.QuotationItemDao;
 import com.xss.domain.*;
 import com.xss.domain.enums.FeeCategory;
+import com.xss.domain.enums.PayCategory;
 import com.xss.domain.enums.PayFrom;
 import com.xss.domain.enums.SocialSecurityCategory;
 import com.xss.util.BigDecimalUtils;
+import com.xss.util.DateTimeUtil;
+import com.xss.util.DateUtil;
+import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
+import javax.persistence.LockModeType;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 /**
  *  Service - 报价单明细
@@ -49,7 +57,7 @@ public class QuotationItemService extends BaseService<QuotationItem, Long> {
     @Transactional
     public List<QuotationItem> createQuotationItem(Quotation quotation) {
 
-        // 基数获取（根据城市ID获取当前城市的所有基数）
+        // 基数获取
         PayBase payBase = payBaseService.getPayBaseByCityId(quotation.getCity().getId());
         List<QuotationItem> quotationItemList = new ArrayList<>();
         QuotationItem quotationItem = null;
@@ -87,7 +95,7 @@ public class QuotationItemService extends BaseService<QuotationItem, Long> {
     @Transactional
     private QuotationItem createSocialQuotationItem(PayBase payBase, Quotation quotation) {
 
-        // 缴费比例获取（根据城市和户口性质查询出社保比例配置，能够查询出社保类型集合）
+        // 缴费比例获取
         List<SocialSecurityRatioSetting> socialSecurityRatioSettingList = socialSecurityRatioSettingService.getSocialSecurityRatioSetting(quotation.getCity(), quotation.getResidenceType());
         Configs configs = configsService.getConfigsByCode(quotation.getCity().getParent().getCode() + "_" + Configs.MEDICALCARE_CODE);
 
@@ -109,8 +117,8 @@ public class QuotationItemService extends BaseService<QuotationItem, Long> {
                         if(payBaseTemp.compareTo(payBase.getSsc0BaseMin()) < 0) {
                             payBaseTemp = payBase.getSsc0BaseMin();
                         }
-                        quotationItem.setEndowmentBase(payBaseTemp);//养老保险基数
-                        quotationItem.setEndowment(SocialSecurityCategory.ssc0);//社保类型ID
+                        quotationItem.setEndowmentBase(payBaseTemp);
+                        quotationItem.setEndowment(SocialSecurityCategory.ssc0);
 
                         // 个人 缴费
                         if(socialSecurityRatioSetting.getPayFrom() == PayFrom.pf0) {
@@ -203,24 +211,6 @@ public class QuotationItemService extends BaseService<QuotationItem, Long> {
                         } else if(socialSecurityRatioSetting.getPayFrom() == PayFrom.pf1) {
                             // 公司 缴费
                             quotationItem.setDisabilityCompany(BigDecimalUtils.setScale(getAmount(socialSecurityRatioSetting, payBaseTemp), 2, BigDecimal.ROUND_HALF_UP));
-                        }
-                    } else if (socialSecurityRatioSetting.getSocialSecurityCategory().equals(SocialSecurityCategory.ssc6)) {
-                        //大病
-                        // 大病缴费基数 < 社保分类明细基数 取 分类明细基数
-                        if (payBase.getSsc6BaseMin().compareTo(BigDecimal.ZERO) == 0) {
-                            payBaseTemp = BigDecimal.ZERO;
-                        } else if (payBaseTemp.compareTo(payBase.getSsc6BaseMin()) < 0){
-                            payBaseTemp = payBase.getSsc6BaseMin();
-                        }
-                        quotationItem.setSeriousBase(payBaseTemp);//设置大病的基数
-                        quotationItem.setSerious(SocialSecurityCategory.ssc6);
-
-                        //个人 缴费
-                        if (socialSecurityRatioSetting.getPayFrom() == PayFrom.pf0){
-                            quotationItem.setSeriousPerson(BigDecimalUtils.setScale(getAmount(socialSecurityRatioSetting,payBaseTemp),2,BigDecimal.ROUND_HALF_UP));
-                        } else if (socialSecurityRatioSetting.getPayFrom() == PayFrom.pf1){
-                            //公司 缴费
-                            quotationItem.setSeriousCompany(BigDecimalUtils.setScale(getAmount(socialSecurityRatioSetting,payBaseTemp),2,BigDecimal.ROUND_HALF_UP));
                         }
                     }
                 }
@@ -324,7 +314,7 @@ public class QuotationItemService extends BaseService<QuotationItem, Long> {
                 i ++;
                 joitem = new JSONObject();
                 joitem.put("id", i);
-                joitem.put("project", quotationItem.getEndowment().getDesc()); //社保类型 养老
+                joitem.put("project", quotationItem.getEndowment().getDesc());
                 joitem.put("cardinalNum", quotationItem.getEndowmentBase());
                 joitem.put("personalNum", quotationItem.getEndowmentPerson());
                 joitem.put("companyNum", quotationItem.getEndowmentCompany());
@@ -333,7 +323,7 @@ public class QuotationItemService extends BaseService<QuotationItem, Long> {
                 i ++;
                 joitem = new JSONObject();
                 joitem.put("id", i);
-                joitem.put("project", quotationItem.getUnemployment().getDesc());//社保类别 失业
+                joitem.put("project", quotationItem.getUnemployment().getDesc());
                 joitem.put("cardinalNum", quotationItem.getUnemploymentBase());
                 joitem.put("personalNum", quotationItem.getUnemploymentPerson());
                 joitem.put("companyNum", quotationItem.getUnemploymentCompany());
@@ -342,7 +332,7 @@ public class QuotationItemService extends BaseService<QuotationItem, Long> {
                 i ++;
                 joitem = new JSONObject();
                 joitem.put("id", i);
-                joitem.put("project", quotationItem.getInjury().getDesc());//社保类别 工商
+                joitem.put("project", quotationItem.getInjury().getDesc());
                 joitem.put("cardinalNum", quotationItem.getInjuryBase());
                 joitem.put("personalNum", quotationItem.getInjuryPerson());
                 joitem.put("companyNum", quotationItem.getInjuryCompany());
@@ -373,16 +363,6 @@ public class QuotationItemService extends BaseService<QuotationItem, Long> {
                 joitem.put("cardinalNum", quotationItem.getDisabilityBase());
                 joitem.put("personalNum", quotationItem.getDisabilityPerson());
                 joitem.put("companyNum", quotationItem.getDisabilityCompany());
-                ja.add(joitem);
-
-                i ++;
-                joitem = new JSONObject();
-                joitem.put("id", i);
-                SocialSecurityCategory serious = quotationItem.getSerious();
-                joitem.put("project", serious.getDesc());
-                joitem.put("cardinalNum", quotationItem.getSeriousBase());
-                joitem.put("personalNum", quotationItem.getSeriousPerson());
-                joitem.put("companyNum", quotationItem.getSeriousCompany());
                 ja.add(joitem);
             }
 

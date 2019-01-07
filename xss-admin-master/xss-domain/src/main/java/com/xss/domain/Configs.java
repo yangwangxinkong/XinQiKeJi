@@ -41,13 +41,17 @@ public class Configs extends OrderEntity {
 //	public static final String NEWHAND_MEAL = "newhand_meal"; //新手参保服务费折扣0.8
 	public static final String DEFAULT_VIP_RECHARGE_FEE_CODE = "vip_recharge_fee"; //会员充值费用
 	public static final String DEFAULT_VIP_VALID_MONTH_CODE = "vip_valid_month"; //会员有效月份
-	public static final String DEFAULT_VIP_DISCOUNT_CODE = "vip_discount"; //会员优惠折扣
+	public static final String DEFAULT_VIP_DISCOUNT_CODE = "vip_discount"; //会员套餐每单服务费
 	public static final String DEFAULT_FIRST_ORDER_DISCOUNT_CODE = "fist_order_discount"; //首单优惠折扣
 	public static final String DEFAULT_PRICE_TO_POINT_CODE = "one_price_to_point"; //1元转金豆比例
 	public static final String WEB_VIDEO_URL = "web_video_url"; //WEB左下角视频播放地址
 	public static final String SHB_SET_SUB_TITLE = "shb_set_sub_title"; //缴社保金页面，社保套餐副标题展示
 	public static final String GJJ_SET_SUB_TITLE = "gjj_set_sub_title"; //缴公积金页面，公积金套餐副标题展示
-
+	public static final String SHARE_REGISTER_MONEY = "share_register_money"; //注册返佣金额
+	public static final String SHARE_ORDER_DISCOUNT = "share_order_discount"; //下单返佣比例
+	public static final String SHARE_ORDER_MONEY = "share_order_money"; //下单返佣金额
+	public static final String SWITCH_FIRST_ORDER_SHARE = "share_first_order_switch"; //是否首单返佣开关.0：首单；1：所有单
+	public static final String SHARE_TITLE_DESC = "share_title_desc";//分享标题和描述的编码
 
 
 	/** 编码 */
@@ -115,4 +119,5 @@ public class Configs extends OrderEntity {
 		jo.put("createDate", DateUtil.format(configs.getCreateDate()));
 		return jo;
 	}
+
 }

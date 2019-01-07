@@ -59,23 +59,19 @@ import LangSelect from '@/components/LangSelect'
 import SocialSign from './socialsignin'
 
 export default {
-
-
-
-
   components: { LangSelect, SocialSign },
   name: 'login',
   data() {
     const validateUsername = (rule, value, callback) => {
       if (!isvalidUsername(value)) {
-        callback(new Error('请输入正确的用户名！'))
+        callback(new Error('Please enter the correct user name'))
       } else {
         callback()
       }
     }
     const validatePassword = (rule, value, callback) => {
-      if (value.length < 8||value.length>20) {
-        callback(new Error('密码长度为8至20之间！'))
+      if (value.length < 6) {
+        callback(new Error('The password can not be less than 6 digits'))
       } else {
         callback()
       }
@@ -85,9 +81,9 @@ export default {
         username: '',
         password: ''
       },
-      loginRules: {                                                                              //失去焦点事件
-        username: [{ required: true, trigger: 'blur', message:'用户名账号' },{validator:validateUsername,trigger:'blur'}],
-        password: [{ required: true, trigger: 'blur', message:'密码账号' },{validator:validatePassword,trigger:'blur'}]
+      loginRules: {
+        username: [{ required: true, trigger: 'blur', message:'用户名账号' }],
+        password: [{ required: true, trigger: 'blur', message:'密码账号' }]
       },
       passwordType: 'password',
       loading: false,
@@ -114,8 +110,7 @@ export default {
             this.loading = false
           })
         } else {
-          console.log('用户名密码错误!!')
-        alert("用户名密码错误，请重新输入！")
+          console.log('error submit!!')
           return false
         }
       })

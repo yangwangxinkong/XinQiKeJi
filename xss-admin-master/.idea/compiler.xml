@@ -14,6 +14,15 @@
         <module name="xss-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xss-admin-api" target="1.8" />
+      <module name="xss-admin-master" target="1.8" />
+      <module name="xss-common" target="1.8" />
+      <module name="xss-dao" target="1.8" />
+      <module name="xss-domain" target="1.8" />
+      <module name="xss-mobile-api" target="1.8" />
+      <module name="xss-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
