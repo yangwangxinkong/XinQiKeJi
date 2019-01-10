@@ -1,13 +1,13 @@
-package top.zwwl.zwwlmaster;
+package top.zhanwangweilai.springbootmaster;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ZwwlMasterApplication {
+public class SpringBootMasterApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ZwwlMasterApplication.class, args);
+        SpringApplication.run(SpringBootMasterApplication.class, args);
     }
 
 }
