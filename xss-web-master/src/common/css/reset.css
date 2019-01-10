@@ -1,0 +1,194 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+a {
+  color: #8a8a8a;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font: 12px/1.5 'microsoft yahei Adobe 黑体 Std R';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+i {
+  font-weight: normal;
+  font-style: normal;
+}
+label {
+  vertical-align: middle;
+}
+img {
+  display: inline-block;
+  border: none;
+}
+::-ms-clear,
+::-ms-reveal {
+  display: none;
+}
+button.disabled {
+  background: #ccc;
+}
+button.disabled:hover {
+  background: #ccc;
+  cursor: default;
+}
+.reset_body img {
+  display: inline-block;
+}
+.bdsharebuttonbox {
+  display: none !important;
+}
+/*隐藏分享弹层*/
+.bdshare_dialog_box,
+.bdshare_dialog_bg {
+  display: none !important;
+}
+body .mCSB_scrollTools .mCSB_draggerRail,
+body .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 5px;
+  border-radius: 0;
+}
+body .mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #f7f7f7;
+}
+body .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #c2c2c2;
+}
+body .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover {
+  background-color: #000!important;
+}
+body .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+body .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+  background-color: #c2c2c2;
+}
+body div.bottomTab {
+  margin-top: 0;
+}

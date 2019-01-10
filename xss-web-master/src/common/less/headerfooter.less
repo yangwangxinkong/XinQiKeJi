@@ -1,0 +1,172 @@
+//head
+@import "./variable.less";
+@import "./mixin.less";
+.topbar{
+	height:40px;line-height:40px;border-bottom:solid 1px @grey-f5;background:@grey-f5;color:@grey-6;overflow:hidden;
+    .line{height:12px;width:1px;background:#dcdcdc;margin:15px 10px 0;}
+    .topbar-left{
+        .icon-point {
+            display: inline-block;
+            margin-top: 10px;
+        }
+    }
+	.curcity {
+		line-height:40px;
+	}
+	.curcity{
+		a{
+            color: @color-base;
+            padding-left: 10px;
+		}
+	}
+	a{
+        color:@grey-6;
+        &:hover{color:@color-base;}
+    }
+    .topbar-right{
+        .icon-phone{
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+    }
+}
+
+// 导航栏
+.header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    box-shadow: 2px 3px 24px 0 rgba(96,96,96,.11);
+    z-index: 100;
+}
+.header-top{
+    width: 100%;
+    height: 90px;
+}
+.header-nav-content{
+    position: relative;
+    height: 90px;
+    line-height: 90px;
+    .nav-content-left {
+        width: 185px;
+        height: 90px;
+        .logo-box{
+            width: 185px;
+            height: 90px;
+        }
+    }
+    ul.nav-content-center{
+        width: 666px;
+        margin-left: 330px;
+        li{
+            float: left;
+            position: relative;
+            z-index: 20;
+            padding: 24px 34px 0;
+            &.active{
+                a.navMenu{
+                    color: @color-base;
+                    border-bottom:2px solid @color-base;
+                }
+            }
+            a.navMenu{
+                color: @font-active-color;
+                font-size: 16px;
+                display: block;
+               
+                height: 40px;
+                line-height: 40px;
+                .tran;
+                &:hover{
+                    color: @color-base
+                }
+            }
+        }
+    }
+    .nav-content-right{
+        height: 90px;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        .image{
+            width: 80px;
+            height: 80px;
+        }
+        .phone_img{
+            position: relative;
+            height: 25px;
+            font-family: ArialMT,PingFangSC,Lantinghei SC,Open Sans,Arial,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,STHeiti,WenQuanYi Micro Hei,SimSun,sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            font-stretch: normal;
+            line-height: 25px;
+            letter-spacing: 1px;
+            color: @color-base;
+            text-align: center;
+            text-indent: 24px;
+            display: inline-block;
+        }
+
+    }
+}
+//footer
+.footer{
+    padding-top:35px;
+    padding-bottom: 15px;
+    background:@footer-background;
+    color: #fff;
+    font-size: 14px;
+  
+    .footer-left{
+        width:340px;
+        .left-tel {
+            margin-top: 80px;
+        }
+        .left-qrcode{
+            margin-top: 20px;
+        }
+    }
+    .footer-right{
+        width: 800px;
+        height: 150px;
+        padding-left: 25px;
+        margin-top: 18px;
+        .mod_help_list{
+            width: 605px;
+        }
+        .mod_help_nav{
+            width: 25%;
+            .mod_help_nav_tit{
+                font-size: 16px;
+            }
+            .mod_help_nav_con{
+                li{
+                    font-size: 16px;
+                    height: 35px;
+                    line-height: 35px;
+                    color: #CCCCCC;
+                    a{
+                        .tran;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+	.qrcode{
+        line-height:25px;
+        margin-left: 50px;
+    }
+    .footer-bootom{
+        padding-top: 20px;
+        border-top: 1px solid #7f7f7f;
+    }
+}
+
