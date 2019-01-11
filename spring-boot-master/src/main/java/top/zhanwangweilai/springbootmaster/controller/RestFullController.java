@@ -11,7 +11,7 @@ public class RestFullController {
         System.out.println("============================restFull===================================");
         return res;
     }
-    @RequestMapping("/index.html")
+    @RequestMapping("/index")
     public String index(){
         System.out.println("主页面访问");
         return "index";
