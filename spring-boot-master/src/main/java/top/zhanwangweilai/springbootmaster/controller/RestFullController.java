@@ -6,14 +6,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class RestFullController {
+
+    /*提供所有页面的访问*/
     @RequestMapping("/page/{res}")
     public String restFull(@PathVariable String res){
-        System.out.println("============================restFull===================================");
+        System.out.println("page执行了");
         return res;
     }
-    @RequestMapping("/index")
+    @RequestMapping("/")
     public String index(){
-        System.out.println("主页面访问");
         return "index";
     }
 }
