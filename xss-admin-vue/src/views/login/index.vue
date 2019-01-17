@@ -5,6 +5,7 @@
 
       <div class="title-container">
         <h3 class="title">{{$t('login.title')}}</h3>
+        <!--<h3 class="title">后台管理器</h3>-->
         <!--<lang-select class="set-language"></lang-select>-->
       </div>
 

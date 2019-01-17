@@ -289,7 +289,7 @@ export default {
     theme: '换肤'
   },
   login: {
-    title: '小豆社保平台中心',
+    title: '后台管理系统',
     logIn: '登录',
     username: '账号',
     password: '密码',
