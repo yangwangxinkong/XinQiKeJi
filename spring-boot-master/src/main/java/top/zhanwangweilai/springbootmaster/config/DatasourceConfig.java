@@ -104,15 +104,18 @@ public class DatasourceConfig  {
     /*
     * @Qualifier    可能用于自动装配
     * */
-    @Bean(name="sqlSessionFactory")
+    /*@Bean(name="sqlSessionFactory")
     @Primary
     public SqlSessionFactory dslSqlSessionFactory(@Qualifier("dataSource") DataSource dataSource) throws Exception{
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);
         sessionFactory.setTypeAliasesPackage("top.zhanwangweilai.springbootmaster.pojo");
+        org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration();
+        configuration.setMapUnderscoreToCamelCase(true);//设置驼峰规则
+        sessionFactory.setConfiguration(configuration);
         sessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(DatasourceConfig.MAPPER_LOCATION));
         return sessionFactory.getObject();
-    }
+    }*/
 
     /*
     *  配置druid监控

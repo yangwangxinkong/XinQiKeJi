@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.zhanwangweilai.springbootmaster.dao.AdvertisingImgMapper">
+    <!--添加图片-->
+    <insert id="insertAdvertising" parameterType="AdvertisingImg" >
+        insert into advertising_img values (null,now(),now(),${width},${height},${imgType},#{imgAddress});
+    </insert>
+    <select id="findByTypes" resultType="AdvertisingImg" >
+        SELECT id,created_time,modify_time,width,height,img_type,img_address FROM advertising_img WHERE img_type=#{imgType};
+    </select>
+</mapper>
+
