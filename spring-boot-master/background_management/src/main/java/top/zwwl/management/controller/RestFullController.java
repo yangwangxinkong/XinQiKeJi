@@ -15,6 +15,6 @@ public class RestFullController {
     }
     @RequestMapping("/")
     public String index(){
-        return "index";
+        return "index3";
     }
 }

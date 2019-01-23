@@ -1,77 +1,74 @@
-package com.sample;
+package top.zwwl.management.pojo;
 
+import java.io.Serializable;
+import java.util.Date;
 
-public class AdvertisingImg {
+/*
+* 图片实体类
+* */
+public class AdvertisingImg implements Serializable {
 
-  private long id;
-  private java.sql.Timestamp createdTime;
-  private java.sql.Timestamp modifyTime;
-  private long width;
-  private long heigth;
-  private long imgType;
-  private String imgAdress;
+    private Integer id;
+    private Date createdTime;
+    private Date modifyTime;
+    private Integer width;
+    private Integer height;
+    private Integer imgType;
+    private String imgAddress;
 
+    public Integer getId() {
+        return id;
+    }
 
-  public long getId() {
-    return id;
-  }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-  public void setId(long id) {
-    this.id = id;
-  }
+    public Date getModifyTime() {
+        return modifyTime;
+    }
 
+    public void setModifyTime(Date modifyTime) {
+        this.modifyTime = modifyTime;
+    }
 
-  public java.sql.Timestamp getCreatedTime() {
-    return createdTime;
-  }
+    public Date getCreatedTime() {
+        return createdTime;
+    }
 
-  public void setCreatedTime(java.sql.Timestamp createdTime) {
-    this.createdTime = createdTime;
-  }
+    public void setCreatedTime(Date createdTime) {
+        this.createdTime = createdTime;
+    }
 
+    public Integer getWidth() {
+        return width;
+    }
 
-  public java.sql.Timestamp getModifyTime() {
-    return modifyTime;
-  }
+    public void setWidth(Integer width) {
+        this.width = width;
+    }
 
-  public void setModifyTime(java.sql.Timestamp modifyTime) {
-    this.modifyTime = modifyTime;
-  }
+    public Integer getHeight() {
+        return height;
+    }
 
+    public void setHeight(Integer height) {
+        this.height = height;
+    }
 
-  public long getWidth() {
-    return width;
-  }
+    public Integer getImgType() {
+        return imgType;
+    }
 
-  public void setWidth(long width) {
-    this.width = width;
-  }
+    public void setImgType(Integer imgType) {
+        this.imgType = imgType;
+    }
 
+    public String getImgAddress() {
+        return imgAddress;
+    }
 
-  public long getHeigth() {
-    return heigth;
-  }
-
-  public void setHeigth(long heigth) {
-    this.heigth = heigth;
-  }
-
-
-  public long getImgType() {
-    return imgType;
-  }
-
-  public void setImgType(long imgType) {
-    this.imgType = imgType;
-  }
-
-
-  public String getImgAdress() {
-    return imgAdress;
-  }
-
-  public void setImgAdress(String imgAdress) {
-    this.imgAdress = imgAdress;
-  }
-
+    public void setImgAddress(String imgAddress) {
+        this.imgAddress = imgAddress;
+    }
 }

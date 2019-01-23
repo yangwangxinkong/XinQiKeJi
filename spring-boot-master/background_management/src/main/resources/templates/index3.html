@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<h1 th:text="${key}"></h1>
+<h1>后台管理系统</h1>
 <form action="/fileUpload" method="post" enctype="multipart/form-data">
     <label>上传图片</label>
     <input type="file" name="file"/>
     <input type="submit" value="上传"/>
+    <hr>
 </form>
 <p>图片:</p>
-<img th:src="${filename }" />
-<p th:text="${filename}">filename</p>
-<img src="" alt="asdfghjkl;">
-<h2>index3</h2>
+<img th:src="${imgAddress }" style="width: 100px"/>
+<form action="/saveImg" method="get"  accept-charset="UTF-8">
+    图片地址：<input type="text" name="imgAddress" th:value="${imgAddress}" value="等待上传" readonly>
+    图片类型：<input type="text" name="imgType" value="0">
+    <button type="submit">提交</button>
+</form>
+<h2 th:if="${message}" th:value="${message}"></h2>
 </html>

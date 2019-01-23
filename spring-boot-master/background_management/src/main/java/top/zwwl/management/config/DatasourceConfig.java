@@ -9,13 +9,17 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.util.unit.DataSize;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
+import javax.servlet.MultipartConfigElement;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.HashMap;
@@ -25,11 +29,11 @@ import java.util.Map;
 * 配置druid数据库连接池（springboot默认不支持，所以需要自己配置）
 * */
 @Configuration
-@MapperScan(basePackages = DatasourceConfig.PACKAGE,sqlSessionFactoryRef = "sqlSessionFactory")
+//@MapperScan(basePackages = DatasourceConfig.PACKAGE,sqlSessionFactoryRef = "sqlSessionFactory")
 public class DatasourceConfig  {
     // 精确到 master 目录，以便跟其他数据源隔离
-    static final String PACKAGE = "top.zhangwangweilai.springbootmaster.dao";//给mybatis配置实体类的路径
-    static final String MAPPER_LOCATION = "classpath*:mapper/*.xml";//给mybatis配置映射文件的路径
+    //static final String PACKAGE = "top.zwwl.management.dao";//给mybatis配置实体类的路径
+    //static final String MAPPER_LOCATION = "classpath*:mapper/*.xml";//给mybatis配置映射文件的路径
     @Value("${ds1.datasource.url}")
     private String url;
     @Value("${ds1.datasource.username}")
@@ -104,15 +108,15 @@ public class DatasourceConfig  {
     /*
     * @Qualifier    可能用于自动装配
     * */
-    @Bean(name="sqlSessionFactory")
+    /*@Bean(name="sqlSessionFactory")
     @Primary
     public SqlSessionFactory dslSqlSessionFactory(@Qualifier("dataSource") DataSource dataSource) throws Exception{
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);
-        sessionFactory.setTypeAliasesPackage("top.zhanwangweilai.springbootmaster.pojo");//可能配置实体类的别名方便在映射文件中使用
+        sessionFactory.setTypeAliasesPackage("top.zwwl.management.pojo");//可能配置实体类的别名方便在映射文件中使用
         sessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(DatasourceConfig.MAPPER_LOCATION));
         return sessionFactory.getObject();
-    }
+    }*/
 
     /*
     *  配置druid监控
@@ -143,4 +147,5 @@ public class DatasourceConfig  {
         filterRegistrationBean.addInitParameter("exclusions", "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*");//配置忽略的路径
         return filterRegistrationBean;
     }
+
 }

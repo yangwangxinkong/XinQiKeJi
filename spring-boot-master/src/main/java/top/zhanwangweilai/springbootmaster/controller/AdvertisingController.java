@@ -8,6 +8,8 @@ import top.zhanwangweilai.springbootmaster.pojo.AdvertisingImg;
 import top.zhanwangweilai.springbootmaster.service.AdvertisingService;
 import top.zhanwangweilai.springbootmaster.vo.PublicRelust;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
@@ -19,14 +21,19 @@ public class AdvertisingController {
     @Autowired
     private AdvertisingService advertisingService;
 
-    @RequestMapping("/test01")
-    public String test(){
+   /* @RequestMapping("/saveImg")
+    public String saveImgAddress(HttpServletRequest request,String imgAddress,Integer imgType){
         try {
+            //从session中获取图片的宽高
+            HttpSession session = request.getSession();
+            Integer width = (Integer)session.getAttribute("width");
+            Integer height = (Integer)session.getAttribute("height");
+
             AdvertisingImg advertisingImg = new AdvertisingImg();
-            advertisingImg.setHeight(300);
-            advertisingImg.setWidth(500);
-            advertisingImg.setImgType(12);
-            advertisingImg.setImgAddress("测试");
+            advertisingImg.setWidth(width);
+            advertisingImg.setHeight(height);
+            advertisingImg.setImgType(imgType);
+            advertisingImg.setImgAddress(imgAddress);
             int test = advertisingImgMapper.insertAdvertising(advertisingImg);
 
             return test+"";
@@ -34,7 +41,7 @@ public class AdvertisingController {
             e.printStackTrace();
         }
         return "失败了！";
-    }
+    }*/
 
     /*
     * 根据图片类型获取图片

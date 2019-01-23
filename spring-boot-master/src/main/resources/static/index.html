@@ -5,13 +5,13 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>Realtor a Real Estates and Builders Category Flat bootstrap Responsive website Template | Home :: w3layouts</title>
 <!--mobile apps-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Realtor Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="Realtor Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- fonts -->
@@ -66,10 +66,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <section class="banner">
 	<div id="slideshow-banner">
 		<ul>
-			<li class="slideshow-item"><img src="images/banner1.jpg" alt="" /></li>
+			<li class="slideshow-item" th:each="image:${images}"><img th:src="${image.imgAddress}" /></li>
+			<!--<li class="slideshow-item"><img src="images/banner1.jpg" alt="" /></li>
 			<li class="slideshow-item"><img src="images/banner3.jpg" alt="" /></li>
 			<li class="slideshow-item"><img src="images/banner4.jpg" alt="" /></li>
-			<li class="slideshow-item"><img src="images/banner2.jpg" alt="" /></li>
+			<li class="slideshow-item"><img src="images/banner2.jpg" alt="" /></li>-->
 		</ul>
 	</div>
 </section>
@@ -80,34 +81,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="row">
 			<div class="col-md-3 col-sm-6 col-xs-12 info-col">
 				<div class="info1">
-					<h3><span class="fa fa-globe"></span> Place & Contact</h3>
-					<p><span class="fa fa-fort-awesome"></span> 384 Maple Circle</p>
-					<p><span class="fa fa-location-arrow"></span> Chicago,USA</p>
-					<p><span class="fa fa-phone-square"></span> +00 1010101010</p>
+					<h3><span class="fa fa-globe"></span> 列表一</h3>
+					<p><span class="fa fa-fort-awesome"></span>列表一一</p>
+					<p><span class="fa fa-location-arrow"></span>列表一二</p>
+					<p><span class="fa fa-phone-square"></span>列表一三</p>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 info-col">
 				<div class="info2">
-					<h3><span class="fa fa-globe"></span> Important Links</h3>
-					<p><span class="fa fa-map-marker"></span> Google Maps</p>
-					<p><span class="fa fa-facebook-square"></span> Facebook Social Network</p>
-					<p><span class="fa fa-television"></span>CNN International</p>
+					<h3><span class="fa fa-globe"></span>列表二</h3>
+					<p><span class="fa fa-map-marker"></span>列表二一</p>
+					<p><span class="fa fa-facebook-square"></span>列表二二</p>
+					<p><span class="fa fa-television"></span>列表二三</p>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 info-col">
 				<div class="info3">
-					<h3><span class="fa fa-globe"></span> Media Links</h3>
-					<p><span class="fa fa-mixcloud"></span> Mixcloud</p>
-					<p><span class="fa fa-cloud-download"></span> Cloud Download</p>
-					<p><span class="fa fa-cloud-upload"></span>Cloud Upload</p>
+					<h3><span class="fa fa-globe"></span>列表三</h3>
+					<p><span class="fa fa-mixcloud"></span>列表三一</p>
+					<p><span class="fa fa-cloud-download"></span>列表三二</p>
+					<p><span class="fa fa-cloud-upload"></span>列表三三</p>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 info-col">
 				<div class="info4">
-					<h3><span class="fa fa-globe"></span> Social Links</h3>
-					<p><span class="fa fa-pinterest-square"></span> Pinterest</p>
-					<p><span class="fa fa-whatsapp"></span> Whatsapp</p>
-					<p><span class="fa fa-youtube-square"></span> Youtube</p>
+					<h3><span class="fa fa-globe"></span>列表四</h3>
+					<p><span class="fa fa-pinterest-square"></span>列表四一</p>
+					<p><span class="fa fa-whatsapp"></span>列表四二</p>
+					<p><span class="fa fa-youtube-square"></span>列表四三</p>
 				</div>
 			</div>
 		</div>
@@ -141,7 +142,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
 </section>
 <!-- /services section -->
@@ -198,7 +199,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <section class="our-team" id="team">
 	<h3 class="text-center">Best Of The Best - Our Team</h3>
 	<p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	<div class="container">	
+	<div class="container">
 			<div class="team-img">
 				<div class="view1 view-seventh">
 					<img src="images/team1.jpg" />
@@ -244,7 +245,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
                 </div>
 			</div>
-			<div class="team-img">	
+			<div class="team-img">
                 <div class="view4 view-seventh">
                     <img src="images/team4.jpg" />
                     <div class="mask">
@@ -289,7 +290,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
                 </div>
 			</div>
-			<div class="team-img">			
+			<div class="team-img">
                 <div class="view7 view-seventh">
                     <img src="images/team7.jpg" />
                     <div class="mask">
@@ -304,7 +305,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
                 </div>
 			</div>
-			<div class="team-img">	
+			<div class="team-img">
                 <div class="view8 view-seventh">
                     <img src="images/team8.jpg" />
                     <div class="mask">
@@ -319,7 +320,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
                 </div>
 			</div>
-	</div>	
+	</div>
 </section>
 <!-- /team section -->
 <!-- pricing table -->
@@ -344,7 +345,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</div>
 				</section>
-			</div>		
+			</div>
 			<div class="col-md-4 pricing-table">
 				<section class="pricing-section">
 					<div class="pricing pricing--jinpa">
@@ -366,7 +367,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="col-md-4 pricing-table">
 				<section class="pricing-section">
-					<div class="pricing pricing--jinpa">	
+					<div class="pricing pricing--jinpa">
 						<div class="pricing__item">
 							<h3 class="pricing__title">Elite</h3>
 							<div class="pricing__price"><span class="pricing__currency">$</span>3000</div>
@@ -383,7 +384,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</div>
 				</section>
-			</div>		
+			</div>
 			<!--pop-up-grid -->
 			<div id="popup">
 				<div id="small-dialog" class="mfp-hide">
@@ -411,7 +412,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<input id="3" class="css-checkbox1" type="checkbox">
 											<label for="3" class="css-label1"></label>
 											<a class="visa" href="#"></a>
-										</span>												
+										</span>
 									</li>
 									<li>
 										<span class="col_checkbox">
@@ -439,42 +440,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 				</div>
 			</div>
-		<!--button title="Close (Esc)" type="button" class="mfp-close">×</button>
-		<!--pop-up-grid-->
-		</section>
+		</div>
 	</div>
 </section>
+
 <!-- /pricing table -->
 <!-- skill section -->
 <section class="skill">
 	<h3 class="text-center">Our Skills</h3>
 	<p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	<div class="container">	
+	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-xs-12">	
+			<div class="col-sm-6 col-xs-12">
 				<ul class='skills'>
 					<li class='progressbarPhp' data-width='70' data-target='100'>Marketing 70%</li>
 				</ul>
 			</div>
-			<div class="col-sm-6 col-xs-12">	
+			<div class="col-sm-6 col-xs-12">
 				<ul class='skills'>
 					<li class='progressbarPhp' data-width='90' data-target='100'>Development 90%</li>
 				</ul>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-6 col-xs-12">	
+			<div class="col-sm-6 col-xs-12">
 				<ul class='skills'>
 					<li class='progressbarPhp' data-width='65' data-target='100'>Business 65%</li>
 				</ul>
 			</div>
-			<div class="col-sm-6 col-xs-12">	
+			<div class="col-sm-6 col-xs-12">
 				<ul class='skills'>
 					<li class='progressbarPhp' data-width='80' data-target='100'>Trading 80%</li>
 				</ul>
 			</div>
 		</div>
-	</div>	
+	</div>
 </section>
 <!-- /skill section -->
 <!-- contact section -->
@@ -509,9 +509,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="contact-details">
 					<h4>Get In Touch</h4>
 					<div class="contact-info">
-						<div class="address">	
+						<div class="address">
 							<i class="glyphicon glyphicon-globe"></i>
-							<p class="p3">77 Jack Street</p> 
+							<p class="p3">77 Jack Street</p>
 							<p class="p4">Chicago, USA</p>
 						</div>
 						<div class="phone">
@@ -521,7 +521,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						<div class="email-info">
 							<i class="glyphicon glyphicon-envelope"></i>
-							<p class="mail"><a href="mailto:myemail@example.com">myemail1@example.com</a></p> 
+							<p class="mail"><a href="mailto:myemail@example.com">myemail1@example.com</a></p>
 						</div>
 					</div>
 					<div class="footer-links">
@@ -531,10 +531,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
 							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						</ul>	
+						</ul>
 					</div>
-				</div>	
-			</div>	
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -553,9 +553,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="js/jquery.slide.js"></script>
 <script type="text/javascript">
 	$('#slideshow-banner').slide({
-		cdTime : 5000,      
-	    controllerLeftButton : "images/left.png",    
-	    controllerRightButton : "images/right.png"   
+		cdTime : 5000,
+	    controllerLeftButton : "images/left.png",
+	    controllerRightButton : "images/right.png"
 	});
 </script>
 <!-- /js for banner -->
